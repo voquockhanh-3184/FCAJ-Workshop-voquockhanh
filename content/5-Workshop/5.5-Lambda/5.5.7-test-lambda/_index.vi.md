@@ -38,21 +38,21 @@ Trước khi cấu hình API Gateway để phân phối request từ ngoài Inte
    }
    ```
 
-   ![Tạo Event Test](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.3.png)
+   ![Tạo Event Test](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.3.png)
 
 2. Thực thi kiểm thử (Test Execution):
    * Nhấn nút **Test** ở góc phải trên.
    * Kiểm tra kết quả trả về trong phần **Execution result**:
      * Nếu **statusCode** trả về là **`200`** và body chứa chuỗi JSON mong muốn (ví dụ: `{"status":"OK"}`), tức là Express app đã khởi động và hoạt động bình thường trên AWS Lambda.
 
-   ![Kết quả kiểm thử thành công](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.4.png)
+   ![Kết quả kiểm thử thành công](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.4.png)
 
 3. Kiểm tra Logs thực thi trong Amazon CloudWatch:
    * AWS Lambda tự động tích hợp với CloudWatch để ghi nhật ký hoạt động.
    * Chọn tab **Monitor** trên trang chi tiết Lambda -> Chọn **View CloudWatch logs**.
    * Tại trang CloudWatch Logs, mở **Log Stream** mới nhất để xem chi tiết thông tin log kết nối MongoDB, thời gian khởi động, dung lượng bộ nhớ sử dụng thực tế và mã định danh của request (Request ID).
 
-   ![Kiểm tra CloudWatch Logs](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/CloudWatchLog.png)
+   ![Kiểm tra CloudWatch Logs](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/CloudWatchLog.png)
 
    * **CloudWatch Logs** đóng vai trò cực kỳ quan trọng trong môi trường serverless để phục vụ cho việc debug, tối ưu chi phí (theo dõi thời gian thực thi / Memory tối đa sử dụng) và giám sát hệ thống.
 

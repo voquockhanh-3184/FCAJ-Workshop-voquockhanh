@@ -26,4 +26,4 @@ The Examora examination management system has three primary user categories:
 1. In the detailed configuration view of the created User Pool, switch to the **Groups** tab -> Click **Create group**.
 2. Create three groups sequentially, using the exact names: `ADMIN`, `TEACHER`, and `STUDENT` -> Click **Create group** to complete each one.
 
-![Create Group](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.6.png)
+![Create Group](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.6.png)

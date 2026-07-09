@@ -10,7 +10,7 @@ pre : " <b> 5.6.4. </b> "
 *   **Expected Result**: API Gateway rejects the request, returning a `401 Unauthorized` HTTP status.
 *   **Actual Result**:
 
-   ![Test Case 1](/images/5-Workshop/5.6-API-Gateway/5.6.4-test-api-gateway/TestAPI1.png)
+   ![Test Case 1](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.4-test-api-gateway/TestAPI1.png)
 
 *   *Assessment*: The Cognito JWT Authorizer is correctly intercepting and blocking unauthenticated requests before they reach the Lambda backend execution context.
 
@@ -36,7 +36,7 @@ fetch("https://4js2c8rp18.execute-api.ap-southeast-1.amazonaws.com/api/auth/me",
 *   **Expected Result**: Returns the user profile JSON object retrieved from MongoDB Atlas.
 *   **Actual Result**:
 
-   ![Test Case 2](/images/5-Workshop/5.6-API-Gateway/5.6.4-test-api-gateway/TestAPI2.png)
+   ![Test Case 2](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.4-test-api-gateway/TestAPI2.png)
 
 *   *Assessment*: The output demonstrates that API Gateway successfully authorizes the request using the Cognito JWT credentials, routes the payload to the Lambda Backend API, which successfully accesses MongoDB Atlas to retrieve and return the user profile.
 *   *Conclusion*: The end-to-end authentication and integration chain (**Cognito -> API Gateway JWT Authorizer -> Lambda Backend API -> MongoDB Atlas**) is fully functional.

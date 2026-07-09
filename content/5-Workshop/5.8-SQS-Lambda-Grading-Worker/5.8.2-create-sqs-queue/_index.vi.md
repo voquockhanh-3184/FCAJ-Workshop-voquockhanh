@@ -17,9 +17,9 @@ pre : " <b> 5.8.2. </b> "
      * **Name**: Nhập `examora-grading-dlq-dev`.
      * Các thông số cấu hình khác giữ nguyên mặc định -> Nhấn **Create queue**.
 
-   ![Cấu hình tạo DLQ](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS2.png)
+   ![Cấu hình tạo DLQ](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS2.png)
 
-   ![Tạo DLQ thành công](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS3.png)
+   ![Tạo DLQ thành công](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS3.png)
 
 2. Tạo SQS Grading Queue (Hàng đợi chính):
    * Nhấn **Create queue** lần nữa để tạo hàng đợi chính.
@@ -31,7 +31,7 @@ pre : " <b> 5.8.2. </b> "
      * **Maximum receives**: Điền `3` (tin nhắn xử lý lỗi quá 3 lần sẽ chuyển vào DLQ).
    * Nhấn **Create queue** để hoàn tất.
 
-   ![Tạo SQS Grading Queue với DLQ](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS4.png)
+   ![Tạo SQS Grading Queue với DLQ](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS4.png)
 
 3. Lưu lại Queue URL và ARN:
    * Sau khi tạo xong, mở chi tiết hàng đợi chính để lưu lại hai giá trị:
@@ -60,11 +60,11 @@ pre : " <b> 5.8.2. </b> "
    *(Đổi `<ACCOUNT_ID>` thành ID tài khoản AWS của bạn)*.
    * Đặt tên cho policy là: `examora-backend-send-grading-policy-dev`.
 
-   ![Thêm quyền SendMessage SQS](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS5.png)
+   ![Thêm quyền SendMessage SQS](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS5.png)
 
 5. Bổ sung cấu hình môi trường cho Lambda Backend API:
    * Vào Lambda Backend API -> Tab **Configuration** -> **Environment variables** -> Bấm **Edit** và thêm biến môi trường sau:
      * `GRADING_QUEUE_URL` = `<Queue URL của bạn>`
    * Bấm **Save** để lưu cấu hình.
 
-   ![Khai báo Queue URL làm biến môi trường](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS6.png)
+   ![Khai báo Queue URL làm biến môi trường](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS6.png)

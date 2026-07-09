@@ -11,7 +11,7 @@ pre : " <b> 5.9. </b> "
 *   Establish name resolution management using **Amazon Route 53** hosted zones.
 *   Attach a custom domain to the frontend deployment and secure it with SSL/TLS certificates.
 
-![Frontend Deployment Architecture with Amplify and Route 53](/images/5-Workshop/5.9-Amplify-Route53/5.9.1-objectives/DeployFE1.png)
+![Frontend Deployment Architecture with Amplify and Route 53](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.1-objectives/DeployFE1.png)
 
 #### Sections:
 1. [Configure Amazon Route 53 for Custom Domain](5.9.2-configure-route53/)

@@ -21,7 +21,7 @@ pre : " <b> 5.6.3. </b> "
      * **Audience**: Enter your `<COGNITO_APP_CLIENT_ID>` (the Client ID generated in the Cognito setup).
    * Click **Create** to save the authorizer.
 
-   ![Create JWT Authorizer](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.8.png)
+   ![Create JWT Authorizer](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.8.png)
 
 2. Attach the Authorizer to Examora Business Routes:
    * Navigate back to **Routes** -> select the `ANY /{proxy+}` route (which encompasses all private backend application endpoints).
@@ -29,15 +29,15 @@ pre : " <b> 5.6.3. </b> "
    * Click **Attach authorizer** -> click **Save** to persist the configuration.
    * *Note*: Leave the `GET /health` route public (without an authorizer attached) to permit public monitoring.
 
-   ![Attach Authorizer to Route](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.9.png)
+   ![Attach Authorizer to Route](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.9.png)
 
 3. Configure CORS:
    * To allow the frontend to invoke the API Gateway from another origin/domain, CORS must be configured.
    * Go to the **CORS** tab in the left panel -> click **Configure** -> specify the permitted CORS headers, methods, and origins -> click **Save**.
 
-   ![Configure CORS](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/CORS6.1.png)
+   ![Configure CORS](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/CORS6.1.png)
 
 > [!NOTE]
 > Navigate back to your **Lambda Function** -> go to the **Configuration** tab -> select **Permissions** -> scroll down to the **Resource-based policy statements** section. Verify that a policy statement exists allowing API Gateway to invoke the Lambda function. This permissions policy is mandatory for API Gateway to invoke your Lambda backend.
 >
-> ![Resource-based Policy Statement](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/LambdaInvoke.png)
+> ![Resource-based Policy Statement](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/LambdaInvoke.png)

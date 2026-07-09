@@ -16,15 +16,15 @@ pre : " <b> 5.9.2. </b> "
      * **Type**: Chọn `Public hosted zone`.
      * Chọn **Create hosted zone** để khởi tạo vùng cấu hình DNS.
 
-   ![Truy cập Route 53 Hosted Zone](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route1.png)
+   ![Truy cập Route 53 Hosted Zone](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route1.png)
 
-   ![Khởi tạo Hosted Zone thành công](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route2.png)
+   ![Khởi tạo Hosted Zone thành công](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route2.png)
 
 2. Lấy danh sách AWS Name Servers:
    * Bấm vào tên miền vừa cấu hình trong bảng danh sách Hosted zones.
    * Tại tab **Records**, tìm bản ghi loại `NS` (Name Server) -> Ghi lại danh sách **4 giá trị Name Servers** của AWS được hiển thị.
 
-   ![Lấy danh sách Name Servers AWS](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route3.png)
+   ![Lấy danh sách Name Servers AWS](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route3.png)
 
 3. Cấu hình Name Servers tại nhà cung cấp tên miền:
    * Đăng nhập vào trang quản trị tên miền nơi bạn mua domain.
@@ -39,4 +39,4 @@ pre : " <b> 5.9.2. </b> "
      *(Ví dụ: `nslookup -type=NS examora.click`)*.
    * Nếu kết quả trả về đúng danh sách nameserver chứa `awsdns`, tên miền của bạn đã được Route 53 quản lý DNS thành công.
 
-   ![Kiểm tra DNS với lệnh nslookup](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route4.png)
+   ![Kiểm tra DNS với lệnh nslookup](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route4.png)

@@ -16,15 +16,15 @@ pre : " <b> 5.9.2. </b> "
      * **Type**: Select `Public hosted zone`.
      * Click **Create hosted zone** to provision the DNS zone.
 
-   ![Access Route 53 Hosted Zones](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route1.png)
+   ![Access Route 53 Hosted Zones](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route1.png)
 
-   ![Hosted Zone Created](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route2.png)
+   ![Hosted Zone Created](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route2.png)
 
 2. Retrieve AWS Name Servers:
    * Click on your newly created domain in the Hosted zones overview page.
    * In the **Records** tab, locate the record of type `NS` (Name Server) -> record the **4 AWS Name Server values** displayed.
 
-   ![AWS Name Servers](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route3.png)
+   ![AWS Name Servers](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route3.png)
 
 3. Update Name Server Settings at Your Domain Registrar:
    * Sign in to your domain registrar dashboard.
@@ -39,4 +39,4 @@ pre : " <b> 5.9.2. </b> "
      *(Example: `nslookup -type=NS examora.click`)*.
    * If the output lists the AWS name server hostnames containing `awsdns`, DNS delegation has successfully propagated.
 
-   ![Verify DNS with nslookup](/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route4.png)
+   ![Verify DNS with nslookup](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.2-configure-route53/Route4.png)

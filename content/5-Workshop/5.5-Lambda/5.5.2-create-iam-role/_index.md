@@ -17,19 +17,19 @@ An AWS Lambda function requires an **execution role** to access other AWS servic
    * **Service or use case**: Select **Lambda**.
    * Click **Next**.
 
-   ![Select Trusted Entity](/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.2.png)
+   ![Select Trusted Entity](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.2.png)
 
 3. Attach the baseline policies for logging and tracing: in the **Permissions policies** section, search for and select:
    * **AWSLambdaBasicExecutionRole**: Grants permission to upload logs to Amazon CloudWatch Logs.
    * **AWSXRayDaemonWriteAccess**: Grants permission to upload trace segments to AWS X-Ray.
 
-   ![Select Permission Policies](/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.3.png)
+   ![Select Permission Policies](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.3.png)
 
 4. Name and create the Role:
    * **Role name**: Enter a descriptive name (e.g., `examora-lambda-backend-role`).
    * Review the configuration and click **Create role**.
 
-   ![Name Role](/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.4.png)
+   ![Name Role](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.4.png)
 
 5. Attach Secrets Manager read permissions (to allow connection to MongoDB Atlas):
    * Select the newly created role -> under the **Permissions** tab -> click **Add permissions** -> select **Create inline policy**.
@@ -53,6 +53,6 @@ An AWS Lambda function requires an **execution role** to access other AWS servic
    * *Note*: `/examora/dev/mongodb` corresponds to the secret created earlier in AWS Secrets Manager containing `MONGO_URI` and `MONGO_DB_NAME`.
    * Name the policy (e.g., `examora-lambda-secrets-policy`) -> click **Create policy**.
 
-   ![Attach Inline Policy](/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.5.png)
+   ![Attach Inline Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.5.png)
 
 The IAM execution role for the Lambda Backend API has been successfully created.

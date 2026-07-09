@@ -14,7 +14,7 @@ pre : " <b> 5.7.3. </b> "
    * Truy cập dịch vụ **IAM** -> Chọn **Roles** -> Tìm và chọn IAM execution role của Lambda Backend API (ví dụ: `examora-lambda-backend-role`).
    * Tại tab **Permissions** -> Chọn **Add permissions** -> Chọn **Create inline policy**.
 
-   ![Thêm Permissions Inline Policy](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions1.png)
+   ![Thêm Permissions Inline Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions1.png)
 
    * Chọn phương thức soạn thảo bằng **JSON** và dán đoạn policy dưới đây:
 
@@ -36,15 +36,15 @@ pre : " <b> 5.7.3. </b> "
    ```
    *(Thay `<UPLOAD_BUCKET_NAME>` bằng tên S3 bucket của bạn đã tạo ở bước 5.7.1)*.
 
-   ![Soạn thảo Policy bằng JSON](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions2.png)
+   ![Soạn thảo Policy bằng JSON](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions2.png)
 
    * Nhấn **Next**.
    * Đặt tên cho policy (ví dụ: `examora-backend-upload-bucket-policy-dev`).
    * Chọn **Create policy** để hoàn tất.
 
-   ![Đặt tên Inline Policy](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions3.png)
+   ![Đặt tên Inline Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions3.png)
 
-   ![Policy S3 đã được gắn thành công](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions4.png)
+   ![Policy S3 đã được gắn thành công](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions4.png)
 
 2. Khai báo cấu hình S3 Bucket làm biến môi trường cho Lambda:
    * Quay lại dịch vụ **Lambda** -> Chọn hàm `examora-backend-api` -> Chọn tab **Configuration** (Cấu hình) -> Chọn **Environment variables** -> Bấm **Edit**.
@@ -53,4 +53,4 @@ pre : " <b> 5.7.3. </b> "
      * `UPLOAD_BUCKET_REGION` = `ap-southeast-1`
    * Bấm **Save** để lưu lại.
 
-   ![Cấu hình biến môi trường S3](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/EnvBucket1.png)
+   ![Cấu hình biến môi trường S3](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/EnvBucket1.png)

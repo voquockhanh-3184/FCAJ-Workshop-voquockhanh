@@ -17,7 +17,7 @@ Create an **Amazon Cognito User Pool** to handle user signup, login, and authori
 1. Search for and select the **Cognito** service in the AWS Management Console.
 - On the left sidebar menu, choose **User pools** -> Click **Create user pool**.
 
-![Create User Pool](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.1.png)
+![Create User Pool](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.1.png)
 
 2. Configure User Pool properties:
 - In the **Application type** section, select **Single-page application (SPA)**.
@@ -26,9 +26,9 @@ Create an **Amazon Cognito User Pool** to handle user signup, login, and authori
 - Enter your Frontend Local URL (this URL will be updated later once hosted via S3 + CloudFront).
 - Click **Create user directory** to initialize.
 
-![Configure SPA](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.2.png)
+![Configure SPA](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.2.png)
 
-![User Directory Info](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.3.png)
+![User Directory Info](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.3.png)
 
 3. Click on the newly created User Pool to retrieve the following critical configuration environment variables:
 - `AWS_REGION = ap-southeast-1`
@@ -40,8 +40,8 @@ Create an **Amazon Cognito User Pool** to handle user signup, login, and authori
 - In the **Attribute verification and user account confirmation** section -> Select **Allow Cognito to automatically send messages to verify and confirm** and choose **Send email message, verify email address**.
 - This setup enables Cognito to automatically dispatch OTP codes to verify and confirm a user's account upon signup.
 
-![Attribute Verification](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.4.png)
+![Attribute Verification](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.4.png)
 
 5. Update the Verification message template so that the verification email matches the branding and style of the Examora project.
 
-![Message Template](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.5.png)
+![Message Template](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.5.png)

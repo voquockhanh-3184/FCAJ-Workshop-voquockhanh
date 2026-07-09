@@ -11,7 +11,7 @@ pre : " <b> 5.9. </b> "
 *   Cấu hình quản lý hệ thống phân giải tên miền (DNS) bằng **Amazon Route 53**.
 *   Gắn tên miền tùy chỉnh (custom domain) cho ứng dụng Frontend và cấu hình bảo mật SSL/TLS.
 
-![Sơ đồ triển khai Frontend với Amplify và Route 53](/images/5-Workshop/5.9-Amplify-Route53/5.9.1-objectives/DeployFE1.png)
+![Sơ đồ triển khai Frontend với Amplify và Route 53](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.9-Amplify-Route53/5.9.1-objectives/DeployFE1.png)
 
 #### Nội dung:
 1. [Cấu hình Amazon Route 53 cho Domain](5.9.2-configure-route53/)

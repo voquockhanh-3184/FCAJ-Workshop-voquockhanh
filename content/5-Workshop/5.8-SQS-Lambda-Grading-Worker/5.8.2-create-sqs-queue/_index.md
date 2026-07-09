@@ -17,9 +17,9 @@ To implement the message queuing pipeline, we need to create two SQS queues: the
      * **Name**: Enter `examora-grading-dlq-dev`.
      * Keep all other default settings -> click **Create queue**.
 
-   ![Configure SQS DLQ](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS2.png)
+   ![Configure SQS DLQ](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS2.png)
 
-   ![DLQ Created](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS3.png)
+   ![DLQ Created](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS3.png)
 
 2. Create SQS Grading Queue (Primary Queue):
    * Click **Create queue** again to set up the primary queue.
@@ -31,7 +31,7 @@ To implement the message queuing pipeline, we need to create two SQS queues: the
      * **Maximum receives**: Enter `3` (messages failing more than 3 processing attempts will be redirected to the DLQ).
    * Click **Create queue** to finish.
 
-   ![Create SQS Grading Queue with DLQ](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS4.png)
+   ![Create SQS Grading Queue with DLQ](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS4.png)
 
 3. Record Queue URL and ARN Values:
    * Select your primary queue from the list and record the following attributes:
@@ -60,7 +60,7 @@ To implement the message queuing pipeline, we need to create two SQS queues: the
    *(Ensure you replace `<ACCOUNT_ID>` with your AWS Account ID)*.
    * Name the policy: `examora-backend-send-grading-policy-dev`.
 
-   ![Add SQS Send Message Permission Policy](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS5.png)
+   ![Add SQS Send Message Permission Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS5.png)
 
 5. Configure SQS URL Environment Variable in Lambda:
    * Access the Lambda Backend API dashboard -> navigate to the **Configuration** tab -> select **Environment variables** -> click **Edit**.
@@ -68,4 +68,4 @@ To implement the message queuing pipeline, we need to create two SQS queues: the
      * `GRADING_QUEUE_URL` = `<Your SQS Queue URL>`
    * Click **Save** to persist.
 
-   ![Register SQS URL Environment Variable](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS6.png)
+   ![Register SQS URL Environment Variable](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.2-create-sqs-queue/SQS6.png)

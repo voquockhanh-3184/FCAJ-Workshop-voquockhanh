@@ -20,7 +20,7 @@ The Lambda Backend API will:
 *   Write execution logs to Amazon CloudWatch.
 *   Enable request tracing using AWS X-Ray.
 
-![Lambda Backend Architecture](/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.1.png)
+![Lambda Backend Architecture](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.1.png)
 
 #### Content
 

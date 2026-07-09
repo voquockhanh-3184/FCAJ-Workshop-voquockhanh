@@ -21,7 +21,7 @@ pre : " <b> 5.6.3. </b> "
      * **Audience**: Nhập `<COGNITO_APP_CLIENT_ID>` (App Client ID được tạo ở phần Cognito).
    * Nhấn **Create** để khởi tạo.
 
-   ![Tạo JWT Authorizer](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.8.png)
+   ![Tạo JWT Authorizer](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.8.png)
 
 2. Gắn Authorizer vào các route nghiệp vụ của Examora:
    * Quay lại mục **Routes** -> Nhấp chọn route `ANY /{proxy+}` (route chứa các API cần bảo mật).
@@ -29,15 +29,15 @@ pre : " <b> 5.6.3. </b> "
    * Nhấn **Attach authorizer** -> Nhấn **Save** để lưu lại.
    * *Lưu ý*: Giữ nguyên route `GET /health` không gắn Authorizer để cho phép kiểm tra tình trạng hệ thống công khai.
 
-   ![Gắn Authorizer cho proxy route](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.9.png)
+   ![Gắn Authorizer cho proxy route](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/API6.9.png)
 
 3. Cấu hình CORS:
    * Để cho phép Frontend gọi API Gateway từ một domain/port khác, chúng ta cần bật CORS.
    * Chuyển đến tab **CORS** ở menu trái -> Chọn **Configure** -> Cấu hình các thông tin (ví dụ: `Access-Control-Allow-Origin`, `Access-Control-Allow-Headers`, `Access-Control-Allow-Methods`) -> Nhấn **Save**.
 
-   ![Cấu hình CORS](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/CORS6.1.png)
+   ![Cấu hình CORS](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/CORS6.1.png)
 
 > [!NOTE]
 > Hãy quay lại **Lambda Function** -> Chọn tab **Configuration** -> **Permissions** -> Cuộn xuống mục **Resource-based policy statements** để kiểm tra quyền. Đảm bảo có statement cho phép API Gateway invoke Lambda, giúp API Gateway có thể giao tiếp được với Lambda Backend API.
 >
-> ![Resource-based Policy](/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/LambdaInvoke.png)
+> ![Resource-based Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.3-configure-jwt-authorizer-cors/LambdaInvoke.png)

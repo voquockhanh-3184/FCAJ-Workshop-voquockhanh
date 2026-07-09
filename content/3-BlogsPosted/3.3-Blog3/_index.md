@@ -22,8 +22,8 @@ Key points to understand:
 
 The solution helps businesses proactively identify underutilized Capacity Reservations, allowing them to adjust or cancel unnecessary reservations to reduce costs. Long-term data storage on Amazon S3 and analysis using Amazon Athena also provides a foundation for large-scale AWS cost management reports and dashboards.
 
-![Picture blog 3](/images/blog3.png)
+![Picture blog 3](/FCAJ-Workshop-voquockhanh/images/blog3.png)
 
 [Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204187187012908/#)
 
-![Instruction](/images/instructionblog3.png)
+![Instruction](/FCAJ-Workshop-voquockhanh/images/blog3.png)

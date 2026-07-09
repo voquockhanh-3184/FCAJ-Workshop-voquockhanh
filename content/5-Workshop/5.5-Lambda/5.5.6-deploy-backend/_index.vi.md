@@ -21,7 +21,7 @@ Sau khi đã tích hợp thư viện bọc và điều chỉnh cấu trúc mã n
    * Truy cập trang quản lý [Functions](https://ap-southeast-1.console.aws.amazon.com/lambda/home?region=ap-southeast-1#/functions) của dịch vụ Lambda -> Chọn function `examora-backend-api` đã tạo -> Chọn tab **Code**.
    * Tại mục **Code source**, chọn nút **Upload from** ở góc phải -> Chọn **.zip file** -> Nhấn **Upload** và tìm đến tệp `backend.zip` vừa đóng gói -> Nhấn **Save**.
 
-   ![Upload file .zip](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.1.png)
+   ![Upload file .zip](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.1.png)
 
 3. Cấu hình Runtime Handler:
    * Mặc định, Lambda sẽ tìm kiếm tệp `index.js` và hàm `handler` ở cấp độ gốc của thư mục. Vì mã nguồn của chúng ta nằm trong thư mục `src/` và export handler trong tệp `lambda.js` (`module.exports.handler = ...`), chúng ta cần điều chỉnh cấu hình này:
@@ -29,4 +29,4 @@ Sau khi đã tích hợp thư viện bọc và điều chỉnh cấu trúc mã n
    * Tại ô **Handler**, chỉnh sửa giá trị thành: **`src/lambda.handler`**.
    * Bấm **Save** để lưu lại.
 
-   ![Cấu hình Handler](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.2.png)
+   ![Cấu hình Handler](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.2.png)

@@ -153,5 +153,5 @@ Qua workshop, em rút ra được những bài học quan trọng:
 
 Dưới đây là một số hình ảnh ghi nhận quá trình tham gia và theo dõi các phiên thảo luận tại buổi Workshop:
 
-![Hình ảnh buổi sự kiện](/images/workshop_overview.jpg)
+![Tổng quan Sự kiện Tech Workshop](/FCAJ-Workshop-voquockhanh/images/workshop_overview.jpg)
 *Hình: Hình ảnh buổi sự kiện*

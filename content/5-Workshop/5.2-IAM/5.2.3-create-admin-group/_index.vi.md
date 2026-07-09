@@ -1,27 +1,27 @@
 ---
-title : "Tạo nhóm quản trị IAM"
-date : 2024-01-01 
+title : "Tạo nhóm quản trị viên IAM Admin Group"
+date : 2026-07-09 
 weight : 3
 chapter : false
 pre : " <b> 5.2.3. </b> "
 ---
 
-1. Trong **IAM Dashboard** (menu bên trái), tìm và chọn **User groups**, sau đó bấm vào **Create group**:
+1. Tại giao diện **IAM Dashboard** (menu bên trái), tìm và chọn mục **User groups**, sau đó nhấn chọn **Create group**:
 
-![Create Group](/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.1.png)
+![Tạo Nhóm](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.1.png)
 
-2. Đặt tên cho nhóm IAM (ví dụ: `ExamoraAdminGroup`):
+2. Nhập tên cho nhóm IAM (Ví dụ: `ExamoraAdminGroup`):
 
-![Set Group Name](/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.2.png)
+![Đặt Tên Nhóm](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.2.png)
 
-3. Gán policy quản trị: Kéo xuống phần **Attach permissions policies - Optional**, tìm và tích chọn **AdministratorAccess** -> Bấm **Create user group** để tiến hành tạo.
+3. Đính kèm chính sách quản trị viên: Cuộn xuống phần **Attach permissions policies - Optional**, tìm kiếm và tích chọn **AdministratorAccess** -> Nhấn **Create user group** để hoàn tất tạo nhóm.
 
-![Attach AdministratorAccess](/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.3.png)
+![Đính kèm quyền AdministratorAccess](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.3.png)
 
 {{% notice info %}}
-**AdministratorAccess** được sử dụng tạm thời cho giai đoạn cấu hình ban đầu.
+Quyền **AdministratorAccess** được sử dụng tạm thời cho giai đoạn cấu hình ban đầu.
 {{% /notice %}}
 
-4. Tạo nhóm người dùng thành công:
+4. Nhóm người dùng đã được tạo thành công:
 
-![Group Created Successfully](/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.4.png)
+![Tạo Nhóm Thành Công](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.3-create-admin-group/IAM2.4.png)

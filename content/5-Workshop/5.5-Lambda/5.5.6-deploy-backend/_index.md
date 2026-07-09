@@ -22,7 +22,7 @@ After integrating the wrapper library and adjusting the Express application stru
    * In the **Code source** panel, click **Upload from** in the top right -> choose **.zip file**.
    * Click **Upload**, select the `backend.zip` file, and click **Save** to upload the package.
 
-   ![Upload .zip Archive](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.1.png)
+   ![Upload .zip Archive](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.1.png)
 
 3. Configure the Runtime Handler:
    * By default, AWS Lambda searches for an `index.js` file exporting a `handler` function at the root level. Since our entrypoint is located in `src/lambda.js` and exports `handler` (`module.exports.handler = ...`), we must update the handler configuration path:
@@ -30,4 +30,4 @@ After integrating the wrapper library and adjusting the Express application stru
    * In the **Handler** text box, update the value to: **`src/lambda.handler`**.
    * Click **Save** to apply the configuration.
 
-   ![Edit Runtime Handler](/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.2.png)
+   ![Edit Runtime Handler](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.6-deploy-backend/LambdaNen5.2.png)

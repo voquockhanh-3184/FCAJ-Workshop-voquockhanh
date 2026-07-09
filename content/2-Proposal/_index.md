@@ -48,7 +48,7 @@ Examora uses an AWS Serverless architecture to separate the system into clear fu
 ### 3. Solution Architecture
 The Examora architecture is organized into frontend hosting, authentication, core API, upload/import pipeline, grading pipeline, monitoring, and security configuration.
 
-![Examora Architecture](/images/2-Proposal/Examora_Architecture_Final2.png)
+![Examora Architecture](/FCAJ-Workshop-voquockhanh/images/2-Proposal/Examora_Architecture_Final2.png)
 
 ### AWS Services Used
 

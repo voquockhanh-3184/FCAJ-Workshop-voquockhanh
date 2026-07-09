@@ -18,8 +18,8 @@ Key points to understand:
 * Compatible with PostgreSQL, making it easy to use existing tools, libraries, and applications without significant code changes.
 * Combines a distributed, serverless architecture with full AWS management, reducing operating costs and allowing focus on application development rather than database administration.
 
-![Picture blog 2](/images/blog2.png)
+![Picture blog 2](/FCAJ-Workshop-voquockhanh/images/blog2.png)
 
 [Link blog](https://www.facebook.com/share/p/1DDGsU5q6f/)
 
-![Instruction](/images/instructionblog2.png)
+![Instruction](/FCAJ-Workshop-voquockhanh/images/blog2.png)

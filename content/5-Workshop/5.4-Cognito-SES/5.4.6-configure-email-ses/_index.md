@@ -16,7 +16,7 @@ For production configurations, Cognito supports direct integration with **Amazon
 1. Select your User Pool -> Click the **Messaging** tab.
 - Find the **Email** section -> Click **Edit**.
 
-![Edit Email Configuration](/images/5-Workshop/5.4-Cognito-SES/SES4.6.png)
+![Edit Email Configuration](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/SES4.6.png)
 
 2. Integrate SES as the email provider:
 - In the **Email provider** section, select **Send email with Amazon SES (recommended)**.
@@ -24,4 +24,4 @@ For production configurations, Cognito supports direct integration with **Amazon
 - Configure the message parameters (e.g., Sender name, Reply-to email address if needed).
 - Click **Save changes** to apply the configuration.
 
-![Save Changes](/images/5-Workshop/5.4-Cognito-SES/SES4.7.png)
+![Save Changes](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/SES4.7.png)

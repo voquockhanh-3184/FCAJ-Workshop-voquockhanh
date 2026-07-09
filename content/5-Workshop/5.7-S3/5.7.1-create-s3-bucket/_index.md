@@ -15,13 +15,13 @@ pre : " <b> 5.7.1. </b> "
      * **AWS Region**: Choose `ap-southeast-1` (Singapore).
      * Keep all other parameters at their default values -> scroll to the bottom and click **Create bucket**.
 
-   ![Create S3 Bucket](/images/5-Workshop/5.7-S3/5.7.1-create-s3-bucket/S3UpLoad6.2.png)
+   ![Create S3 Bucket](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.1-create-s3-bucket/S3UpLoad6.2.png)
 
 2. Configure S3 CORS Policy:
    * Once the bucket is provisioned, click on the bucket name -> navigate to the **Permissions** tab.
    * Scroll down to the **Cross-origin resource sharing (CORS)** configuration panel -> click **Edit**.
 
-   ![Configure CORS S3](/images/5-Workshop/5.7-S3/5.7.1-create-s3-bucket/S3UpLoad6.3.png)
+   ![Configure CORS S3](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.1-create-s3-bucket/S3UpLoad6.3.png)
 
    * Paste the following JSON schema:
 
@@ -39,7 +39,7 @@ pre : " <b> 5.7.1. </b> "
 
    * Click **Save changes** to apply the configuration.
 
-   ![Save CORS S3 Settings](/images/5-Workshop/5.7-S3/5.7.1-create-s3-bucket/S3UpLoad6.4.png)
+   ![Save CORS S3 Settings](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.1-create-s3-bucket/S3UpLoad6.4.png)
 
 #### Explanation:
 Configuring the CORS policy on the S3 Upload Bucket allows cross-origin requests from the React frontend application (running locally at `http://localhost:5173` or in production) to directly upload objects to S3 via presigned URLs, bypassing browser Same-Origin Policy blocks.

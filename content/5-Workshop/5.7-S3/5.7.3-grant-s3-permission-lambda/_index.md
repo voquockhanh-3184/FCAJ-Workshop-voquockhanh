@@ -14,7 +14,7 @@ To enable the Lambda Backend API to sign and generate S3 Presigned URLs, we must
    * Navigate to the **IAM** console -> select **Roles** -> search for and open the Lambda execution role (e.g., `examora-lambda-backend-role`).
    * In the **Permissions** tab -> click **Add permissions** -> choose **Create inline policy**.
 
-   ![Add Permissions Inline Policy](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions1.png)
+   ![Add Permissions Inline Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions1.png)
 
    * Choose the **JSON** editor option and paste the following policy:
 
@@ -36,15 +36,15 @@ To enable the Lambda Backend API to sign and generate S3 Presigned URLs, we must
    ```
    *(Ensure you replace `<UPLOAD_BUCKET_NAME>` with the S3 bucket name created in section 5.7.1)*.
 
-   ![JSON Policy Editor](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions2.png)
+   ![JSON Policy Editor](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions2.png)
 
    * Click **Next**.
    * Set the policy name to: `examora-backend-upload-bucket-policy-dev`.
    * Click **Create policy** to finalize.
 
-   ![Policy Name Definition](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions3.png)
+   ![Policy Name Definition](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions3.png)
 
-   ![Policy Attached Successfully](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions4.png)
+   ![Policy Attached Successfully](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/IAMpermissions4.png)
 
 2. Register S3 Configurations as Lambda Environment Variables:
    * Navigate to the **Lambda** dashboard -> open the `examora-backend-api` function -> click the **Configuration** tab -> choose **Environment variables** in the left menu -> click **Edit**.
@@ -53,4 +53,4 @@ To enable the Lambda Backend API to sign and generate S3 Presigned URLs, we must
      * `UPLOAD_BUCKET_REGION` = `ap-southeast-1`
    * Click **Save** to apply the configuration.
 
-   ![Register S3 Environment Variables](/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/EnvBucket1.png)
+   ![Register S3 Environment Variables](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.3-grant-s3-permission-lambda/EnvBucket1.png)

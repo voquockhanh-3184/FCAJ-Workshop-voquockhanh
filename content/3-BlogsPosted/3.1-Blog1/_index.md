@@ -29,4 +29,4 @@ Share the snapshot to the destination account and restore it to a new database.
 
 [Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2200228570742103/#)
 
-![Instruction](/FCAJ-Workshop-voquockhanh/images/blog2.png)
+![Instruction](/FCAJ-Workshop-voquockhanh/images/instructionblog1.png)

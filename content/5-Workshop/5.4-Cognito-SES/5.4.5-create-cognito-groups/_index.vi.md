@@ -26,4 +26,4 @@ Hệ thống quản lý thi Examora có 3 nhóm người dùng chính:
 1. Trong giao diện chi tiết của User Pool vừa tạo, chuyển sang tab **Groups** -> Chọn **Create group**.
 2. Tiến hành tạo lần lượt 3 group với tên chính xác: `ADMIN`, `TEACHER`, `STUDENT` -> Nhấn chọn **Create group** cho mỗi nhóm để hoàn tất.
 
-![Create Group](/images/5-Workshop/5.4-Cognito-SES/COGNITO4.6.png)
+![Create Group](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.4-Cognito-SES/COGNITO4.6.png)

@@ -40,23 +40,23 @@ pre : " <b> 5.8.3. </b> "
    ```
    *(Ensure you replace `<ACCOUNT_ID>` with your AWS Account ID)*.
 
-   ![Attach IAM Policy to Grading Worker](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork1.png)
+   ![Attach IAM Policy to Grading Worker](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork1.png)
 
 2. Create the Lambda Grading Worker Function:
    * Function name: `examora-grading-worker-dev`.
    * **Runtime**: Select `Node.js 22.x` (matching the Lambda Backend API environment).
    * **Permissions**: Assign the execution role created in the previous step (`examora-grading-worker-lambda-role-dev`).
 
-   ![Initialize Lambda Function](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork2.png)
+   ![Initialize Lambda Function](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork2.png)
 
 3. Attach SQS Trigger to Lambda Grading Worker:
    * Open the `examora-grading-worker-dev` console page -> click **Add trigger**.
    * Select **SQS** as trigger type -> under **SQS queue**, choose `examora-grading-queue-dev`.
    * Click **Add** to save.
 
-   ![Configure SQS Trigger](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger1.png)
+   ![Configure SQS Trigger](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger1.png)
 
-   ![SQS Trigger Attached Successfully](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger2.png)
+   ![SQS Trigger Attached Successfully](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger2.png)
 
 4. Update Codebase Implementation:
    * **Backend API (Publishing grading jobs):** Refactor the exam submission endpoint logic:

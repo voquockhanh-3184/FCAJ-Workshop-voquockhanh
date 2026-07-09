@@ -20,11 +20,11 @@ In this step, we will create the core Lambda function that will host and execute
      * **Permissions**: Expand **Change default execution role** -> choose **Use an existing role** -> search for and select the IAM execution role created in the previous step (e.g., `examora-lambda-backend-role`).
    * Click **Create function** and wait for the initialization to complete.
 
-   ![Configure Function Parameters](/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.1.png)
+   ![Configure Function Parameters](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.1.png)
 
-   ![Select Execution Role](/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.2.png)
+   ![Select Execution Role](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.2.png)
 
 2. Configure Lambda Runtime Settings:
    * Select the newly created function -> navigate to the **Configuration** tab -> choose **General configuration** -> click **Edit**, configure settings as appropriate for the Express backend -> click **Save**.
 
-   ![Adjust General Configuration](/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.3.png)
+   ![Adjust General Configuration](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.3.png)

@@ -15,7 +15,7 @@ Verify that the presigned URL endpoint is securely guarded by API Gateway and th
 *   **Expected Result**: API Gateway rejects the request with an HTTP `401 Unauthorized` status.
 *   **Actual Result**:
 
-   ![Test Case 1: Request without JWT](/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL1.png)
+   ![Test Case 1: Request without JWT](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Verify that the presigned URL endpoint is securely guarded by API Gateway and th
    ```
 *   **Actual Result**:
 
-   ![Test Case 2: Request with Valid JWT](/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL2.png)
+   ![Test Case 2: Request with Valid JWT](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL2.png)
 
 ---
 
@@ -67,10 +67,10 @@ input.click();
 *   **Step 1**: Choose a `.docx` file from your local disk using the generated file selector.
 *   **Actual Result**: The Console displays `S3 upload status: 200` (success).
 
-   ![Test Case 3: S3 Upload Status Log](/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL3.png)
+   ![Test Case 3: S3 Upload Status Log](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL3.png)
 
 *   **Step 2**: Audit upload storage status in the AWS S3 Console:
     *   Navigate to S3 **Buckets** -> open your bucket -> select **Objects** -> browse to the directory `imports/word/raw/<teacherId>/`.
     *   Verifying that the newly uploaded `.docx` file exists in S3 confirms that the direct upload workflow is functional.
 
-   ![Audit Uploaded Object on S3](/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL4.png)
+   ![Audit Uploaded Object on S3](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.5-test-presigned-url-upload/TestURL4.png)

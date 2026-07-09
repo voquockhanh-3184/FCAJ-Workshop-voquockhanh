@@ -14,10 +14,10 @@ After creating the API Gateway, we will verify the public invoke URL to ensure t
    * From the API Gateway left navigation panel -> go to **Deploy** -> select **Stages**.
    * Select the **`$default`** stage -> copy the URL displayed in the **Invoke URL** field.
 
-   ![Retrieve Invoke URL](/images/5-Workshop/5.6-API-Gateway/5.6.2-test-invoke-url/API6.6.png)
+   ![Retrieve Invoke URL](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.2-test-invoke-url/API6.6.png)
 
 2. Test the `/health` Routing Endpoint:
    * Using a web browser, Postman, or cURL client, paste the copied Invoke URL and append the `/health` path suffix (e.g., `https://<api-id>.execute-api.ap-southeast-1.amazonaws.com/health`).
    * **Expected Result**: A successful HTTP JSON response is returned (e.g., `{"status":"OK"}` or other health parameters configured in the Express backend). This validates that the traffic flow from API Gateway to Lambda is operational.
 
-   ![Successful Invoke URL Test](/images/5-Workshop/5.6-API-Gateway/5.6.2-test-invoke-url/API6.7.png)
+   ![Successful Invoke URL Test](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.6-API-Gateway/5.6.2-test-invoke-url/API6.7.png)

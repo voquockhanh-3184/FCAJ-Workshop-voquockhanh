@@ -20,11 +20,11 @@ Trong bước này, chúng ta sẽ tạo Lambda function chính đóng vai trò 
      * **Permissions**: Mở rộng phần **Change default execution role** -> Chọn **Use an existing role** -> Tìm và chọn IAM execution role đã tạo ở bước trước (`examora-lambda-backend-role`).
    * Bấm nút **Create function** ở góc dưới cùng và đợi hệ thống khởi tạo.
 
-   ![Cấu hình tạo Function](/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.1.png)
+   ![Cấu hình tạo Function](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.1.png)
 
-   ![Chọn Execution Role](/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.2.png)
+   ![Chọn Execution Role](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.2.png)
 
 2. Cấu hình Lambda Runtime Settings:
    * Vào function vừa tạo -> **Configuration** -> **General configuration** -> chọn **Edit**, cấu hình cho Express backend phù hợp -> Nhấn **Save**.
 
-   ![Cấu hình General Configuration](/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.3.png)
+   ![Cấu hình General Configuration](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.3-create-lambda-function/LamdaFuctions5.3.png)

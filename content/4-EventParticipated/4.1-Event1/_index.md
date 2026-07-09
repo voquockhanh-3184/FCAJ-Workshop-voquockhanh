@@ -145,5 +145,5 @@ The performance breakdown of **Amazon CloudFront** provided a strong review of o
 
 Below are some photos recording my attendance and tracking the technical presentations during the workshop:
 
-![Tech Workshop Event Overview](/images/workshop.jpg)
+(/FCAJ-Workshop-voquockhanh/images/workshop.jpg)
 Figure

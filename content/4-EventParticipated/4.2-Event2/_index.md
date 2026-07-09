@@ -153,5 +153,5 @@ Reflecting on the workshop, several critical principles stand out:
 
 Below are some photos recording my attendance and tracking the technical presentations during the workshop:
 
-![Tech Workshop Event Overview](/images/workshop_overview.jpg)
+![Tech Workshop Event Overview](/FCAJ-Workshop-voquockhanh/images/workshop_overview.jpg)
 *Figure 1: General view of the main presentation hall at the AWS Enterprise Tech Workshop*

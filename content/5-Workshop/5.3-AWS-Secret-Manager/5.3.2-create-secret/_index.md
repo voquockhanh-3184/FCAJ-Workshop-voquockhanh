@@ -16,7 +16,7 @@ pre : " <b> 5.3.2. </b> "
 
 1. In the AWS Console search bar, type **Secrets Manager** -> Select **Secrets Manager** -> Click **Store a new secret**.
 
-![Secrets Manager Console](/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.1.png)
+![Secrets Manager Console](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.1.png)
 
 2. Create a new secret:
 - In **Choose secret type** -> Select **Other type of secret**.
@@ -26,20 +26,20 @@ pre : " <b> 5.3.2. </b> "
 - Under **Encryption key**, keep the default encryption key (`aws/secretsmanager`).
 - Click **Next**.
 
-![Choose Secret Type](/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.2.png)
+![Choose Secret Type](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.2.png)
 
 3. Set the name for the secret (e.g., `/examora/dev/mongodb`) -> Click **Next**.
 
-![Secret Name](/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.3.png)
+![Secret Name](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.3.png)
 
 4. In the **Configure rotation** section -> Disable **Automatic rotation**.
 - Review all configuration details -> Click **Store** at the bottom to create the secret.
 
-![Configure Rotation](/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.4.png)
+![Configure Rotation](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.4.png)
 
 5. Secret created successfully:
 
-![Secret Created Successfully](/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.5.png)
+![Secret Created Successfully](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.3-AWS-Secret-Manager/5.3.2-create-secret/SecretManage5.5.png)
 
 *   After creating the `/examora/dev/mongodb` secret, note down the **Secret ARN** for use in the subsequent Lambda execution role creation step.
 *   Lambda functions that need database access will be granted `secretsmanager:GetSecretValue` permissions on this secret.

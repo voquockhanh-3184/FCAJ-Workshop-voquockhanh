@@ -11,7 +11,7 @@ In the *Exam Submission & Grading Pipeline*, Examora incorporates **Amazon SQS G
 
 When a student submits their exam answers, the Lambda Backend API does not grade the attempt synchronously. Instead, it validates the request structure, saves the attempt in a `PENDING_GRADING` status, and dispatches a grading job message to the SQS queue. Subsequently, the Lambda Grading Worker is triggered to consume the job from SQS, fetch exam structures from MongoDB Atlas, calculate scores, and update the attempt records.
 
-![Asynchronous Grading Pipeline](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.1-overview/SQS1.png)
+![Asynchronous Grading Pipeline](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.1-overview/SQS1.png)
 
 #### Sections:
 1. [Create SQS Grading Queue](5.8.2-create-sqs-queue/)

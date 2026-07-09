@@ -40,23 +40,23 @@ pre : " <b> 5.8.3. </b> "
    ```
    *(Thay `<ACCOUNT_ID>` bằng ID tài khoản AWS của bạn)*.
 
-   ![Gắn Policy IAM cho Grading Worker](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork1.png)
+   ![Gắn Policy IAM cho Grading Worker](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork1.png)
 
 2. Tạo Function Lambda Grading Worker:
    * Tên function: `examora-grading-worker-dev`.
    * **Runtime**: Chọn `Node.js 22.x` (đồng bộ với Lambda Backend).
    * **Role**: Chọn execution role vừa tạo ở bước trên (`examora-grading-worker-lambda-role-dev`).
 
-   ![Khởi tạo Lambda function](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork2.png)
+   ![Khởi tạo Lambda function](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/LambdaGrandWork2.png)
 
 3. Gắn SQS Trigger cho Lambda Grading Worker:
    * Trên trang chi tiết hàm `examora-grading-worker-dev` -> Bấm **Add trigger**.
    * Tìm chọn trigger **SQS** -> Tại ô **SQS queue**, chọn đúng hàng đợi `examora-grading-queue-dev`.
    * Nhấn **Add** để lưu lại.
 
-   ![Cấu hình SQS Trigger](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger1.png)
+   ![Cấu hình SQS Trigger](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger1.png)
 
-   ![Gắn Trigger SQS thành công](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger2.png)
+   ![Gắn Trigger SQS thành công](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.3-create-lambda-grading-worker/SQSTrigger2.png)
 
 4. Cập nhật mã nguồn hệ thống:
    * **Phía Backend API (Gửi grading job):** Cập nhật luồng nộp bài của sinh viên như sau:

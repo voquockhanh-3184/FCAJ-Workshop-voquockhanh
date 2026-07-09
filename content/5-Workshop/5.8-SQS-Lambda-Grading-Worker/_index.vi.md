@@ -11,7 +11,7 @@ Trong luồng *Exam Submission & Grading Pipeline*, Examora sử dụng **Amazon
 
 Khi sinh viên bấm nộp đáp án, Lambda Backend API sẽ không thực hiện chấm điểm trực tiếp ngay lập tức. Thay vào đó, API chỉ validate cấu trúc bài nộp, lưu attempt (lượt thi) ở trạng thái chờ chấm (`PENDING_GRADING`) và gửi một grading job (thông tin chấm bài) vào hàng đợi SQS. Sau đó, Lambda Grading Worker sẽ tự động được kích hoạt để đọc message từ hàng đợi SQS, kết nối tới cơ sở dữ liệu MongoDB Atlas để chấm điểm và cập nhật kết quả.
 
-![Pipeline chấm thi bất đồng bộ](/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.1-overview/SQS1.png)
+![Pipeline chấm thi bất đồng bộ](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.8-SQS-Lambda-Grading-Worker/5.8.1-overview/SQS1.png)
 
 #### Nội dung:
 1. [Tạo SQS Grading Queue](5.8.2-create-sqs-queue/)

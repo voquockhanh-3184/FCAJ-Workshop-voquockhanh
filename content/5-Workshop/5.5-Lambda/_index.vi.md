@@ -20,7 +20,7 @@ Lambda Backend API sẽ thực hiện:
 *   Ghi nhật ký hoạt động (logs) vào CloudWatch.
 *   Hỗ trợ theo dõi đường đi của request (tracing) bằng AWS X-Ray.
 
-![Kiến trúc hoạt động của Lambda Backend](/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.1.png)
+![Kiến trúc hoạt động của Lambda Backend](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.2-create-iam-role/LambdaBE5.1.png)
 
 #### Nội dung
 

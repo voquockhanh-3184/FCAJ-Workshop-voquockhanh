@@ -24,23 +24,23 @@ Chúng ta cần thêm sự kiện kích hoạt (Trigger) cho S3 Upload Bucket đ
 1. Các bước cấu hình Trigger:
    * Điều hướng tới bảng điều khiển dịch vụ **Amazon S3** -> Chọn tên Bucket đã tạo -> Chuyển qua tab **Properties** (Thuộc tính) -> Cuộn xuống mục **Event notifications** -> Bấm **Create event notification**.
 
-   ![Event Notification S3](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord1.png)
+   ![Event Notification S3](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord1.png)
 
    * Điền thông tin cấu hình sự kiện:
      * **Event name**: Đặt tên gợi nhớ (ví dụ: `ImportWordTrigger`).
      * **Prefix** (tùy chọn): Có thể nhập `imports/word/raw/` để chỉ kích hoạt khi file upload vào đúng thư mục này.
      * **Event types**: Tích chọn **All object create events** (Tất cả sự kiện tạo object).
 
-   ![Cấu hình Event name](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord2.png)
+   ![Cấu hình Event name](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord2.png)
 
-   ![Chọn Event types](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord3.png)
+   ![Chọn Event types](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord3.png)
 
    * Cuộn xuống phần **Destination** (Đích đến):
      * **Destination**: Chọn **Lambda function**.
      * **Lambda function**: Chọn đúng hàm `examora-import-word-processor-dev` đã tạo.
    * Nhấn **Save changes** để lưu lại cấu hình.
 
-   ![Cấu hình Destination](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord4.png)
+   ![Cấu hình Destination](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord4.png)
 
 2. Xây dựng mã nguồn xử lý (Backend Logic):
    * Trong source code của Lambda Processor này, chúng ta cần triển khai các hàm xử lý chính sau:
@@ -57,4 +57,4 @@ Chúng ta cần thêm sự kiện kích hoạt (Trigger) cho S3 Upload Bucket đ
      ```
    * Đóng gói mã nguồn thành file `.zip` và tải lên hàm Lambda `examora-import-word-processor-dev` để hoàn tất triển khai.
 
-   ![Deploy Lambda Import Word Processor](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord5.png)
+   ![Deploy Lambda Import Word Processor](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord5.png)

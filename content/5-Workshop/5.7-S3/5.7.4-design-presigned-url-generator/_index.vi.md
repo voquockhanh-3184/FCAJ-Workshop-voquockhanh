@@ -38,20 +38,20 @@ Trong sơ đồ kiến trúc của Examora, Lambda Presigned URL Generator biể
    }
    ```
 
-   ![Thêm inline policy JSON](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL2.png)
+   ![Thêm inline policy JSON](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL2.png)
 
    * Đặt tên cho policy: `examora-backend-upload-bucket-policy-dev`.
 
-   ![Đặt tên Policy](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL3.png)
+   ![Đặt tên Policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL3.png)
 
 2. Quay lại Function của Lambda Backend API, thêm cấu hình cho môi trường:
 
-   ![Cấu hình Environment variables](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL4.png)
+   ![Cấu hình Environment variables](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL4.png)
 
 3. Cập nhật code Backend Lambda:
    * Trong thư mục Backend, cài thêm package `@aws-sdk/s3-request-presigner` để tạo signed URL cho S3:
 
-   ![Cài đặt S3 Request Presigner](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL5.png)
+   ![Cài đặt S3 Request Presigner](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL5.png)
 
    * Bổ sung thêm endpoint: `POST /api/uploads/presigned-url`. Endpoint này thực hiện:
      * Đọc JWT/user từ middleware protect.

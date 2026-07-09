@@ -24,23 +24,23 @@ We must set up an event notification trigger on the S3 Upload Bucket so that the
 1. Step-by-Step Instructions:
    * Open the **Amazon S3** console -> select your bucket -> navigate to the **Properties** tab -> scroll down to the **Event notifications** section -> click **Create event notification**.
 
-   ![Event Notification S3](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord1.png)
+   ![Event Notification S3](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord1.png)
 
    * Input the configuration parameters:
      * **Event name**: Choose a descriptive name (e.g., `ImportWordTrigger`).
      * **Prefix** (optional): Set to `imports/word/raw/` to ensure the trigger only responds to raw file uploads.
      * **Event types**: Check the box for **All object create events**.
 
-   ![Event Name Configuration](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord2.png)
+   ![Event Name Configuration](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord2.png)
 
-   ![Select Event Types](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord3.png)
+   ![Select Event Types](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord3.png)
 
    * Scroll down to **Destination**:
      * **Destination**: Select **Lambda function**.
      * **Lambda function**: Choose your `examora-import-word-processor-dev` function.
    * Click **Save changes** to apply.
 
-   ![Configure Destination](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord4.png)
+   ![Configure Destination](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord4.png)
 
 2. Implement Backend Processing Logic:
    * The processor codebase should implement the following primary execution logic:
@@ -57,4 +57,4 @@ We must set up an event notification trigger on the S3 Upload Bucket so that the
      ```
    * Package the application files into a `.zip` archive and deploy it to the `examora-import-word-processor-dev` Lambda function.
 
-   ![Deploy Lambda Import Word Processor](/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord5.png)
+   ![Deploy Lambda Import Word Processor](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.6-create-import-word-processor/LambdaWord5.png)

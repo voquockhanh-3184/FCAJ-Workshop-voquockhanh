@@ -12,7 +12,7 @@ We need to configure environment variables for the Lambda function so that the E
 
 1. Select the newly created function -> navigate to the **Configuration** tab -> choose **Environment variables** -> click **Edit** -> Populate the key-value pairs required for the project -> click **Save** to apply the configuration.
 
-   ![Configure Environment Variables](/images/5-Workshop/5.5-Lambda/5.5.4-configure-environment-variables/LambdaEnv5.1.png)
+   ![Configure Environment Variables](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.4-configure-environment-variables/LambdaEnv5.1.png)
 
 2. Enable AWS X-Ray Tracing:
    * AWS X-Ray provides end-to-end tracing, allowing you to monitor request paths and latency profiles as events travel from API Gateway through Lambda to the database, making it easy to debug performance bottlenecks or runtime errors.
@@ -20,4 +20,4 @@ We need to configure environment variables for the Lambda function so that the E
    * In the **CloudWatch Application Signals and AWS X-Ray** section -> check the **Enable** option for **Lambda service traces**.
    * Click **Save** to apply the configuration.
 
-   ![Enable AWS X-Ray Tracing](/images/5-Workshop/5.5-Lambda/5.5.4-configure-environment-variables/LambdaXRay5.1.png)
+   ![Enable AWS X-Ray Tracing](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.5-Lambda/5.5.4-configure-environment-variables/LambdaXRay5.1.png)

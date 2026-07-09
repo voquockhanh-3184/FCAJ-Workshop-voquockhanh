@@ -50,7 +50,7 @@ Examora sử dụng AWS Serverless để tách hệ thống thành các khối r
 ### 3. Kiến trúc giải pháp
 Kiến trúc Examora được chia thành các nhóm chính: frontend hosting, authentication, core API, upload/import pipeline, grading pipeline, monitoring và security configuration.
 
-![Examora Architecture](/images/2-Proposal/Examora_Architecture_Final2.png)
+![Kiến trúc Examora](/FCAJ-Workshop-voquockhanh/images/2-Proposal/Examora_Architecture_Final2.png)
 
 *Dịch vụ AWS sử dụng*
 

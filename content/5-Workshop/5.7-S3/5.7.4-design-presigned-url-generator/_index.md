@@ -38,20 +38,20 @@ In the Examora architecture, the Lambda Presigned URL Generator represents the u
    }
    ```
 
-   ![Add S3 access policy](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL2.png)
+   ![Add S3 access policy](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL2.png)
 
    * Save the policy name as: `examora-backend-upload-bucket-policy-dev`.
 
-   ![Policy Naming](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL3.png)
+   ![Policy Naming](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL3.png)
 
 2. Configure S3 environment variables in the Lambda function console:
 
-   ![Environment Variables Setup](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL4.png)
+   ![Environment Variables Setup](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL4.png)
 
 3. Update Lambda Backend Codebase:
    * Install the `@aws-sdk/s3-request-presigner` SDK package in the backend codebase to enable presigning commands:
 
-   ![Install S3 Presigner SDK](/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL5.png)
+   ![Install S3 Presigner SDK](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.7-S3/5.7.4-design-presigned-url-generator/LambdaURL5.png)
 
    * Add a new endpoint route: `POST /api/uploads/presigned-url`. The route implementation performs:
      * Extracting JWT credentials using the protect authorization middleware.

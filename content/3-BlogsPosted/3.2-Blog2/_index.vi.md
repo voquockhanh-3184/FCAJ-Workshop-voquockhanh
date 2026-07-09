@@ -20,8 +20,8 @@ Các điểm chính cần nắm:
 * Kết hợp giữa kiến trúc phân tán, serverless và quản lý hoàn toàn bởi AWS, giúp giảm chi phí vận hành và tập trung vào phát triển ứng dụng thay vì quản trị cơ sở dữ liệu.
 
 
-![Ảnh blog 2](/images/blog2.png)
+![Hình ảnh bài viết 2](/FCAJ-Workshop-voquockhanh/images/blog2.png)
 
-[Link blog](https://www.facebook.com/share/p/1DDGsU5q6f/)
+[Liên kết bài viết](https://www.facebook.com/share/p/1DDGsU5q6f/)
 
-![Cấu trúc](/images/instructionblog2.png)
+![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/blog2.png)

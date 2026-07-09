@@ -1,45 +1,45 @@
 ---
-title : "Tạo IAM User và bật MFA"
-date : 2024-01-01 
+title : "Tạo người dùng IAM và bật mã xác thực MFA"
+date : 2026-07-09 
 weight : 4
 chapter : false
 pre : " <b> 5.2.4. </b> "
 ---
 
-1. Trong **IAM Dashboard** (menu bên trái), chọn **Users** -> Bấm **Create user** để tiến hành tạo IAM User:
+1. Tại giao diện **IAM Dashboard** (menu bên trái), chọn mục **Users** -> Nhấn chọn **Create user** để bắt đầu quy trình tạo một IAM User:
 
-![Create User](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.1.png)
+![Tạo Người Dùng](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.1.png)
 
-2. Thiết lập các thông tin cần thiết:
+2. Cấu hình các thông tin chi tiết cần thiết cho người dùng:
 
-- **Bước 1**: Tiến hành đặt tên cho IAM User:
+- **Bước 1**: Nhập tên người dùng (username) cho IAM User:
 
-![Set User Name](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.2.png)
+![Đặt Tên Người Dùng](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.2.png)
 
-- **Bước 2**: Thêm user vào nhóm `ExamoraAdminGroup` vừa tạo để gán quyền quản trị cho user:
+- **Bước 2**: Thêm người dùng vào nhóm `ExamoraAdminGroup` đã tạo trước đó để gán các quyền quản trị:
 
-![Add User to Group](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.3.png)
+![Thêm Người Dùng Vào Nhóm](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.3.png)
 
-- **Bước 3**: Kiểm tra lại thông tin và nhấn **Create user** để hoàn tất tạo IAM User:
+- **Bước 3**: Xem lại toàn bộ thông tin chi tiết của người dùng và nhấn **Create user** để hoàn tất:
 
-![Review and Create](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.4.png)
+![Xem lại và Tạo](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.4.png)
 
-- Tương tự, tiến hành tạo thêm các IAM user cho các thành viên khác trong nhóm nhưng với phân quyền phù hợp và thấp hơn.
-- Việc phân quyền này giúp quản lý quyền hạn rõ ràng hơn, giảm nguy cơ dùng chung tài khoản Root hoặc dùng chung một IAM user cho nhiều người.
+- Tương tự, tiến hành tạo các IAM user khác cho các thành viên còn lại trong nhóm nhưng với các quyền hạn thấp hơn, phù hợp với vai trò của từng người.
+- Việc áp dụng nguyên tắc đặc quyền tối thiểu (Least privilege access) giúp quản lý phân quyền rõ ràng, đồng thời giảm thiểu rủi ro từ việc chia sẻ chung tài khoản Root hoặc dùng chung một IAM user duy nhất.
 
-![IAM Users List](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.5.png)
+![Danh sách IAM User](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.5.png)
 
-3. Tiếp tục bật MFA cho IAM user nhằm tăng cường bảo mật khi đăng nhập AWS Console:
+3. Bật mã xác thực đa yếu tố MFA (Multi-Factor Authentication) cho người dùng IAM để tăng cường bảo mật khi đăng nhập vào AWS Console:
 
 {{% notice note %}}
-Về access key, nhóm chỉ tạo cho user cần sử dụng AWS CLI hoặc SAM để deploy hoặc dọn dẹp tài nguyên. Không tạo access key cho toàn bộ thành viên.
+Đối với access key, chỉ nên tạo cho những người dùng thực sự cần sử dụng AWS CLI hoặc SAM để triển khai/dọn dẹp tài nguyên. Không tạo quyền access key này một cách đại trà cho tất cả thành viên.
 {{% /notice %}}
 
-- Click vào user cần bật MFA, chọn tab **Security credentials**.
-- Ở mục **Multi-factor authentication (MFA)**, chọn **Assign MFA device**:
+- Nhấp chọn vào user cần cấu hình MFA, sau đó chuyển sang tab **Security credentials**.
+- Tại khu vực **Multi-factor authentication (MFA)**, nhấn chọn **Assign MFA device**:
 
-![Assign MFA Device](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.6.png)
+![Gán Thiết Bị MFA](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.6.png)
 
-- Đặt tên cho thiết bị MFA và lựa chọn phương thức xác thực tương ứng:
+- Đặt tên định danh cho thiết bị MFA và lựa chọn phương thức xác thực mong muốn:
 
-![Set MFA Device](/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.7.png)
+![Thiết Lập Thiết Bị MFA](/FCAJ-Workshop-voquockhanh/images/5-Workshop/5.2-IAM/5.2.4-create-iam-user/IAM3.7.png)

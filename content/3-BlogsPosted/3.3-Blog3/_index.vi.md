@@ -23,8 +23,8 @@ Các điểm chính cần nắm:
 
 Giải pháp giúp doanh nghiệp chủ động phát hiện các Capacity Reservations sử dụng kém hiệu quả, từ đó điều chỉnh hoặc hủy các reservation không cần thiết để giảm chi phí. Việc lưu trữ dữ liệu dài hạn trên Amazon S3 và phân tích bằng Amazon Athena cũng tạo nền tảng cho các báo cáo và dashboard quản lý chi phí AWS ở quy mô lớn.
 
-![Ảnh blog 3](/images/blog3.png)
+![Hình ảnh bài viết 3](/FCAJ-Workshop-voquockhanh/images/blog3.png)
 
-[Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204187187012908/#)
+[Liên kết bài viết](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204187187012908/#)
 
-![Cấu trúc](/images/instructionblog3.png)
+![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/blog3.png)
