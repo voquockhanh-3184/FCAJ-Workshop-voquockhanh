@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 10/07/2026
 
-![Ảnh đại diện](/images/KHANH.JPG)
+![Ảnh đại diện cá nhân](/FCAJ-Workshop-voquockhanh/images/KHANH.JPG)
 
 ### Nội dung báo cáo
 
