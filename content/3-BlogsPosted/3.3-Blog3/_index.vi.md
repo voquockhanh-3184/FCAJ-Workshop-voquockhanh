@@ -27,4 +27,4 @@ Giải pháp giúp doanh nghiệp chủ động phát hiện các Capacity Reser
 
 [Liên kết bài viết](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204187187012908/#)
 
-![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/instructionblog3.png)
+![Instruction](/FCAJ-Workshop-voquockhanh/images/instructionblog3.png)
