@@ -1,31 +1,27 @@
 ---
 title: "Blog 2"
-date: 2024-01-01
+date: 2026-07-05
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# Tìm hiểu Amazon Aurora DSQL – Giải pháp cơ sở dữ liệu mới trên AWS.
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Amazon Aurora DSQL là dịch vụ cơ sở dữ liệu SQL phân tán theo mô hình serverless do AWS phát triển, hướng đến các ứng dụng hiện đại cần khả năng mở rộng linh hoạt và tính sẵn sàng cao. Dịch vụ tự động quản lý toàn bộ hạ tầng, hỗ trợ kiến trúc Active-Active và tương thích với PostgreSQL, giúp doanh nghiệp xây dựng các hệ thống có hiệu năng cao mà không phải lo về việc vận hành hay mở rộng cơ sở dữ liệu.
 
 Các điểm chính cần nắm:
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+* Amazon Aurora DSQL là dịch vụ cơ sở dữ liệu SQL phân tán (Distributed SQL) theo mô hình serverless, tương thích với PostgreSQL và được AWS quản lý hoàn toàn.
+* Người dùng không cần quản lý hạ tầng, bao gồm việc cấu hình máy chủ, vá lỗi, nâng cấp hoặc bảo trì cơ sở dữ liệu.
+* Hỗ trợ tự động mở rộng (auto scaling) theo nhu cầu truy cập mà không cần sharding, giúp đơn giản hóa việc mở rộng hệ thống.
+* Áp dụng kiến trúc Active-Active, cho phép nhiều node hoạt động đồng thời, tăng khả năng chịu lỗi và đảm bảo tính sẵn sàng cao.
+* Tương thích với PostgreSQL, giúp dễ dàng sử dụng các công cụ, thư viện và ứng dụng hiện có mà không cần thay đổi nhiều mã nguồn.
+* Kết hợp giữa kiến trúc phân tán, serverless và quản lý hoàn toàn bởi AWS, giúp giảm chi phí vận hành và tập trung vào phát triển ứng dụng thay vì quản trị cơ sở dữ liệu.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
 
-...Hình ảnh...
+![Ảnh blog 2](/images/blog2.png)
 
-...Link...
+[Link blog](https://www.facebook.com/share/p/1DDGsU5q6f/)
 
-...Hướng dẫn...
+![Cấu trúc](/images/instructionblog2.png)

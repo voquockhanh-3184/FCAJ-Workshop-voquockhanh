@@ -1,57 +1,38 @@
 ---
-title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 7"
+date: 2026-06-05
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Finalize the project idea, select a specific application topic, and begin preparing the project proposal documentation.
+* Draft the overall system architecture design and research the NoSQL DynamoDB database modeling approach.
+* Initialize and synchronize the team's shared working environment (Project Kick-off).
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to Be Implemented During This Week:
 
+| Day | Task | Start Date | Completion Date | Tools / Platforms |
+| --- | --- | --- | --- | --- |
+| Monday | - **Team Brainstorming & Topic Finalization:** <br>&emsp; + Discuss ideas and evaluate each member's strengths to select a practical project topic <br>&emsp; + Define the project scope and identify core features | 01/06/2026 | 01/06/2026 | Discord |
+| Tuesday | - **Drafting Overall System Architecture:** <br>&emsp; + Design the architecture diagram <br>&emsp; + Identify the data flow between Frontend (S3), API Gateway, Cognito, Lambda, and DynamoDB services | 02/06/2026 | 02/06/2026 | Draw.io |
+| Wednesday | - **Project Kick-off & Initial Setup:** <br>&emsp; + Create a shared Git repository for the team <br>&emsp; + Define the standard project folder structure using AWS CDK and push the initial framework to the repository for team members to clone locally | 03/06/2026 | 03/06/2026 | GitHub / AWS CDK |
+| Thursday | - **Project Proposal Development:** <br>&emsp; + Create the detailed project proposal document <br>&emsp; + Describe the real-world problem, implementation plan, and task assignment for each team member | 04/06/2026 | 04/06/2026 | Google Docs |
+| Friday | - **Research & DynamoDB Single-Table Design:** <br>&emsp; + Identify access patterns required by the frontend application <br>&emsp; + Apply the Single-Table Design approach by designing PK/SK structures with entity prefixes (USER#, ORDER#) | 05/06/2026 | 05/06/2026 | NoSQL Workbench |
 
-### Week 7 Achievements:
+### Challenges & Solutions:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Problem:** Team members faced difficulties when designing the DynamoDB database because they were familiar with the traditional relational database (SQL) approach. This resulted in the tendency to create multiple separate tables, which could increase costs and reduce optimization.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Solution:** The team conducted online discussions to list all required data access patterns from the frontend application. After that, the Single-Table Design approach was applied by using entity prefixes in partition keys (PK) and sort keys (SK) to store multiple related entities within a single DynamoDB table.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+### Achievements in Week 7:
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully finalized the project topic and clearly defined the scope of the real-world problem.
+* Completed the overall system architecture diagram, providing a clear understanding of the data flow across AWS serverless services.
+* Successfully created the initial project proposal document, including the implementation plan and detailed task assignment table.
+* Designed the initial DynamoDB data model using the Single-Table Design approach, helping optimize costs and handle complex data queries efficiently.
+* Established a synchronized project folder structure using AWS CDK and successfully distributed the initial source code framework to all team members' local environments.

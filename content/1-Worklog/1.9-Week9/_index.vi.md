@@ -1,59 +1,32 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+date: 2026-06-19
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai hệ thống xác thực người dùng bằng Amazon Cognito và Amazon SES.
+* Đưa mã nguồn Express backend hiện tại lên AWS Lambda dưới dạng Serverless.
+* Bảo mật các endpoint và bảo vệ API bằng API Gateway JWT Authorizer.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Công cụ / Nền tảng |
+| --- | --- | --- | --- | --- |
+| 2 | - **Tối ưu hóa Cơ sở dữ liệu:** <br>&emsp; + Kiểm tra và xác thực cấu hình schema trong MongoDB Compass <br>&emsp; + Tạo `unique sparse index` cho trường `cognitoSub` trong collection `nguoidungs` | 15/06/2026 | 15/06/2026 | [MongoDB Compass](https://www.mongodb.com/docs/compass/) |
+| 3 | - **Chuyển dịch Backend lên Lambda:** <br>&emsp; + Đóng gói ứng dụng Express.js thành một Lambda handler bằng thư viện serverless-express <br>&emsp; + Tối ưu hóa logic kết nối cơ sở dữ liệu để chạy mượt mà trong vòng đời serverless | 16/06/2026 | 16/06/2026 | AWS Lambda |
+| 4 | - **Kiểm thử Luồng Xác thực:** <br>&emsp; + Test luồng đăng ký tài khoản dành cho student <br>&emsp; + Xác thực mã OTP gửi về email qua dịch vụ Amazon SES <br>&emsp; + Đảm bảo thông tin profile được đồng bộ chính xác vào MongoDB sau khi kích hoạt thành công | 17/06/2026 | 17/06/2026 | [Amazon Cognito](https://docs.aws.amazon.com/cognito/) |
+| 5 | - **Tích hợp API Gateway:** <br>&emsp; + Cấu hình Amazon API Gateway đóng vai trò proxy điều hướng đến Lambda Backend API <br>&emsp; + Thiết lập tính năng JWT Authorizer liên kết trực tiếp với Cognito User Pool | 18/06/2026 | 18/06/2026 | Amazon API Gateway |
+| 6 | - **Kiểm thử Bảo mật API Toàn diện (E2E):** <br>&emsp; + Thực hiện integration test cơ bản trên các route được bảo vệ <br>&emsp; + Kiểm tra cơ chế giải mã token, thời gian hết hạn route và xử lý lỗi cho các request không hợp lệ | 19/06/2026 | 19/06/2026 | Postman / Insomnia |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Thiết lập thành công luồng khép kín bao gồm đăng ký, đăng nhập và xác thực mã OTP bảo mật qua email bằng Amazon Cognito và SES.
+* Tối ưu hóa chỉ mục (index) cơ sở dữ liệu thành công, đảm bảo toàn vẹn dữ liệu khi đối chiếu tài khoản qua trường định danh `cognitoSub`.
+* Di chuyển thành công ứng dụng Express monolithic cũ thành một tầng API Serverless hoạt động ổn định trên AWS Lambda.
+* Cấu hình thông suốt luồng phân phối traffic và kiểm tra thành công các yêu cầu (request) thông qua integration test cơ bản trên Amazon API Gateway.
+* Đảm bảo cơ chế đồng bộ profile vận hành chuẩn xác, các định danh sau khi xác thực lập tức được cập nhật đầy đủ vào bộ sưu tập dữ liệu trên MongoDB.

@@ -1,126 +1,149 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Workshop Report: AI & Cloud Modernization
 
-### Event Objectives
+## 1. Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The workshop provided participants with practical perspectives on contemporary **AI and Cloud** computing trends, enabling them to:
 
-### Speakers
+- Recognize the vital role of **Context** in maximizing AI utility.
+- Discover cloud-based AI ecosystems tailored for enterprise use cases from Amazon.
+- Advance technical knowledge on **Amazon CloudFront** regarding performance, security, and cost efficiency.
+- Acquire product development insights from intensive, high-pressure Hackathon environments.
+- Deeply understand the core computational limits of Large Language Models (LLMs), notably **Non-determinism**.
+- Explore structural patterns of **Multi-Agent Systems** within automated corporate workflows.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+---
 
-### Key Highlights
+## 2. Speakers List
 
-#### Identifying the drawbacks of legacy application architecture
+- Tinh Truong
+- Anh Pham
+- Thinh Nguyen
+- Team VIB
+- Duc Dao
+- Vy Lam
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+---
 
-#### Transitioning to modern application architecture – Microservices
+## 3. Technical Highlights
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+### Context Is Everything: Making AI Actually Work for You
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+This presentation focused on context alignment strategies to ensure high-fidelity generative outputs.
 
-#### Domain-Driven Design (DDD)
+**Key Content:**
+- **Context** remains the defining factor in dictating the semantic accuracy and quality of AI outputs.
+- A well-crafted prompt layout is inherently insufficient; LLMs require extensive, cleanly structured contextual backdrops.
+- Introduced the structural framework of a **Second AI Brain** to capture, preserve, and retrieve operational insights seamlessly.
+- Shared strategies on establishing domain-specific AI frameworks to optimize academic research and career growth trajectories.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+---
 
-#### Event-Driven Architecture
+### Friendly AI Assistant with Amazon Quick
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+An architectural introduction to the productivity-centric capabilities of the **Amazon Quick** toolkit:
 
-#### Compute Evolution
+**Key Components:**
+- **Quick Chat Agent:** A conversational engine designed to run complex database analysis and handle user queries via natural language processing.
+- **Quick Flows:** An interface allowing teams to orchestrate intelligent backend automation workflows without writing core programmatic code.
+- **Quick Spaces:** A secure, centralized collaborative sandbox enabling smooth internal documentation and data synchronization across peer groups.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+---
 
-#### Amazon Q Developer
+### 36 Hours with LotusHacks – Building UTMorpho
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+Team VIB detailed their rapid end-to-end product implementation cycle under severe time constraints:
 
-### Key Takeaways
+**Key Insights:**
+- Core motivations behind entering the competitive landscape of the LotusHacks challenge.
+- The collaborative ideation and technical brainstorming process deployed during the opening hours.
+- Forging a functional Minimum Viable Product (MVP) within an unyielding 36-hour sprint window.
+- Navigating critical integration errors, managing team fatigue, and structural mitigation strategies under stress.
+- Live system demonstration of the completed software architecture.
+- Post-competition analysis and technical debt takeaways.
 
-#### Design Mindset
+---
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+### From Edge To Origin: CloudFront as Your Foundation
 
-#### Technical Architecture
+A deep dive into setting up global caching parameters to secure and accelerate cloud infrastructure:
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+**Key Principles:**
+- Amazon CloudFront capabilities in handling heterogeneous web workloads at scale.
+- Eliminating egress overheads and minimizing operational costs through calculated CDN data distributions.
+- Hardening perimeter defense layers via integrated edge security mechanisms.
+- Maximizing regional system uptime and establishing high-availability protocols.
+- Minimizing structural network response latency utilizing AWS's global network of **Edge Locations**.
 
-#### Modernization Strategy
+---
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+## 4. Key Knowledge Gained
 
-### Applying to Work
+### AI Engineering Insights
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+Following the completion of these workshop modules, I advanced my comprehension of:
 
-### Event Experience
+- The absolute reliance on descriptive input data blocks to minimize hallucinations and direct model accuracy.
+- Advanced prompt structuring methodologies designed to extract coherent programming or logic blocks.
+- The boundaries governing neural networks, specifically managing runtime variability and **Non-determinism**.
+- Modern decentralized development trends shifting from isolated tools toward collaborative **AI Agents** and **Multi-Agent Systems**.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+---
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+### Cloud Infrastructure Paradigms
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+Acquired technical insights regarding:
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+- The mechanics behind how **Amazon CloudFront** accelerates asset caching and delivery profiles worldwide.
+- Configuring secure SSL/TLS handshakes, access control boundaries, and improving origin availability targets via CDN front-ends.
+- Leveraging content distribution layers as a critical buffer zone to optimize core cloud resource utilization.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+---
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+## 5. Practical Application into Study and Work
 
-#### Some event photos
-*Add your event photos here*  
+I plan to integrate these technical lessons directly into my academic development and fullstack engineering tasks:
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+- Designing highly contextualized instruction chains when collaborating with LLM coding systems or code-generation tools to streamline logical structures.
+- Testing the **Amazon Quick** platform to automate data parsing and mock up analytic workspaces for testing databases.
+- Incorporating **Amazon CloudFront** CDN configurations when deploying single-page applications (SPAs) or web backends to enforce proper caching rules and origin security.
+- Refining agile project management skills to efficiently scope features when working on tight timelines with development teams.
+- Evaluating multi-agent software concepts to experiment with asynchronous background tasks and cron automations.
+
+---
+
+## 6. Personal Experience and Impressions
+
+Attending this workshop delivered outstanding real-world value, effectively connecting abstract **AI engineering paradigms** with foundational **Cloud delivery layers**.
+
+The instructional block addressing **Context in Large Language Models** was highly illuminating. It reinforced the understanding that the effectiveness of AI assistance relies heavily on the structured completeness of the data provided to the input buffer.
+
+Additionally, the modular capabilities demonstrated within **Amazon Quick** clearly illustrate that automated tooling is evolving beyond simple chat interfaces into powerful engines capable of orchestrating complex backend data handling and low-code integrations.
+
+The performance breakdown of **Amazon CloudFront** provided a strong review of optimizing data delivery paths to reduce cloud latency and improve origin defense. Finally, tracking Team VIB's technical journey during the construction of **UTMorpho within 36 hours** served as an excellent practical lesson in maintaining focus, engineering modularly under constraints, and executing tasks efficiently as a cohesive development team.
+
+---
+
+## 7. Core Takeaways
+
+- Supplying structured, pristine **Context** is the single most vital component required to generate reliable and useful responses from large language models.
+- AI tools have successfully progressed past basic chatbot status, assuming operational roles in enterprise analytics, workflow automation, and distributed information sharing.
+- Utilizing **Amazon CloudFront** provides engineering teams with an indispensable first line of optimization, radically improving global response speeds, security perimeters, and infrastructure budgets.
+- Rapid product engineering demands a laser focus on resolving the core problem statement, relying on continuous iteration cycles rather than exhaustive initial over-scoping.
+- Developers must explicitly account for the **Non-deterministic** behavior of generative models to design predictable, resilient, and safe user-facing integrations.
+
+---
+
+## 8. Visual Evidence
+
+Below are some photos recording my attendance and tracking the technical presentations during the workshop:
+
+![Tech Workshop Event Overview](/images/workshop.jpg)
+Figure

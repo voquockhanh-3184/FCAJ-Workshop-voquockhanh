@@ -1,40 +1,45 @@
 ---
 title: "Tự đánh giá"
-date: 2024-01-01
+date: 2026-07-08
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Trong thời gian tham gia chương trình **First Cloud AI Journey (FCAJ)** từ **20/04/2026** đến **10/07/2026**, em đã có cơ hội được học tập, thực hành và áp dụng các kiến thức về **Cloud Computing, AWS, AI và phát triển hệ thống thực tế**.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+Trong quá trình tham gia chương trình, em đã thực hiện nhiều bài lab và dự án liên quan đến các dịch vụ AWS như **Amazon Lambda, API Gateway, DynamoDB, Cognito, S3, AWS CDK, CloudWatch, SQS, SNS và CI/CD Pipeline**. Qua đó, em đã cải thiện khả năng thiết kế kiến trúc Cloud, triển khai hệ thống Serverless, làm việc với Infrastructure as Code và nâng cao kỹ năng giải quyết vấn đề.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Bên cạnh kiến thức kỹ thuật, chương trình cũng giúp em phát triển các kỹ năng mềm như làm việc nhóm, trao đổi ý tưởng, tìm kiếm tài liệu, trình bày giải pháp và chủ động xử lý các vấn đề phát sinh trong quá trình thực hiện.
 
+Để đánh giá khách quan quá trình tham gia chương trình, em tự đánh giá bản thân dựa trên các tiêu chí sau:
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐   | ☐   | ✅          |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
+| STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Kiến thức và kỹ năng chuyên môn** | Khả năng tiếp thu và áp dụng kiến thức AWS, Cloud, Serverless vào thực tế | ✅ | ☐ | ☐ |
+| 2 | **Khả năng học hỏi** | Chủ động tìm hiểu công nghệ mới, tiếp thu kiến thức từ tài liệu và mentor | ☐ | ✅ | ☐ |
+| 3 | **Tính chủ động** | Tự nghiên cứu, tìm kiếm giải pháp khi gặp vấn đề trong quá trình thực hành | ✅ | ☐ | ☐ |
+| 4 | **Tinh thần trách nhiệm** | Hoàn thành nhiệm vụ được giao đúng thời hạn và đảm bảo chất lượng | ✅ | ☐ | ☐ |
+| 5 | **Kỷ luật và tác phong làm việc** | Tuân thủ kế hoạch học tập, thời gian thực hiện và quy trình làm việc nhóm | ☐ | ✅ | ☐ |
+| 6 | **Tinh thần cầu tiến** | Tiếp nhận góp ý, cải thiện kiến thức và kỹ năng trong quá trình tham gia | ☐ | ✅ | ☐ |
+| 7 | **Kỹ năng giao tiếp** | Trao đổi vấn đề kỹ thuật, trình bày ý tưởng và báo cáo tiến độ | ☐ | ✅ | ☐ |
+| 8 | **Khả năng làm việc nhóm** | Phối hợp với các thành viên để hoàn thành mục tiêu chung của dự án | ✅ | ☐ | ☐ |
+| 9 | **Tác phong chuyên nghiệp** | Chủ động, tôn trọng và hợp tác trong môi trường làm việc | ✅ | ☐ | ☐ |
+| 10 | **Tư duy giải quyết vấn đề** | Phân tích nguyên nhân, tìm kiếm giải pháp và xử lý lỗi trong quá trình triển khai | ☐ | ✅ | ☐ |
+| 11 | **Đóng góp cho dự án** | Tham gia xây dựng hệ thống, đóng góp ý tưởng và hoàn thành nhiệm vụ được phân công | ✅ | ☐ | ☐ |
+| 12 | **Đánh giá tổng thể** | Mức độ hoàn thành và sự phát triển của bản thân sau chương trình | ✅ | ☐ | ☐ |
 
-### Cần cải thiện
+---
 
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+# Những điểm cần cải thiện
+
+Trong thời gian tới, em sẽ tiếp tục cải thiện một số kỹ năng để nâng cao khả năng làm việc trong lĩnh vực Cloud:
+
+- Củng cố thêm kiến thức về **AWS Architecture, Cloud Security và Cost Optimization** để có thể thiết kế hệ thống tối ưu hơn.
+- Nâng cao khả năng phân tích và giải quyết vấn đề khi gặp các lỗi phức tạp trong quá trình triển khai hệ thống.
+- Cải thiện kỹ năng giao tiếp kỹ thuật, đặc biệt là cách trình bày ý tưởng và giải thích giải pháp một cách rõ ràng hơn.
+- Rèn luyện khả năng quản lý thời gian và lập kế hoạch công việc hiệu quả hơn khi tham gia các dự án lớn.
+- Tiếp tục tìm hiểu thêm về các công nghệ mới như **DevOps, Infrastructure as Code, AI và Cloud Native Application**.
+
+Qua chương trình **First Cloud AI Journey**, em nhận thấy bản thân đã có sự tiến bộ rõ rệt về kiến thức chuyên môn cũng như kỹ năng làm việc thực tế. Đây là nền tảng quan trọng giúp em tiếp tục phát triển trong lĩnh vực **Cloud Computing và Software Engineering** trong tương lai.

@@ -1,57 +1,64 @@
 ---
-title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 5"
+date: 2026-05-22
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+## FCAJ WORKLOG - WEEK 05: EVENT-DRIVEN ARCHITECTURE & ORCHESTRATION
+
+**Performed by:** Vo Quoc Khanh  
+**Group:** KQPSV Group  
+
+---
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn about Event-Driven Architecture and how to build asynchronous processing systems on AWS.
+* Upgrade the system from a synchronous processing model to an asynchronous model in order to:
+  * Increase system scalability.
+  * Reduce Client wait time.
+  * Process background tasks more efficiently.
+* Learn how to use AWS services to build an event processing flow:
+  * Amazon SNS.
+  * Amazon SQS.
+  * AWS Lambda.
+  * AWS Step Functions.
+* Build complex business orchestration processes using Workflow and State Machine.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+### Tasks to be implemented during this week:
+
+| Day | Tasks | Start Date | Completion Date | Reference (Cloud Journey) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Day 2** | - Learn about Event-Driven Architecture:<br>&emsp;+ Event and Event Producer/Consumer concepts<br>&emsp;+ Asynchronous processing model<br>&emsp;+ Applying SNS and SQS in a Cloud system | 18/05/2026 | 18/05/2026 | [Event-Driven Architecture](https://000054.awsstudygroup.com) |
+| **Day 3** | - **Hands-on with Amazon SNS and SQS:**<br>&emsp;+ Create the SNS Topic `MyTopic`<br>&emsp;+ Create the SQS Queues: `InventoryQueue`, `AnalyticsQueue`<br>&emsp;+ Configure the Fan-out Publisher/Subscriber model<br>&emsp;+ Verify message replication across the Queues | 19/05/2026 | 19/05/2026 | [Messaging Systems with SQS and SNS](https://000077.awsstudygroup.com) |
+| **Day 4** | - **Hands-on event processing with Lambda:**<br>&emsp;+ Create the Lambda Function `ProcessOrderFunction` using the Python Runtime<br>&emsp;+ Configure the SQS Queue as an Event Source Trigger<br>&emsp;+ Grant the `AWSLambdaSQSQueueExecutionRole` permission<br>&emsp;+ Check the processing logs on CloudWatch | 20/05/2026 | 20/05/2026 | [Event Processing with SQS and SNS](https://000083.awsstudygroup.com/) |
+| **Day 5** | - **Learn about AWS Step Functions:**<br>&emsp;+ State Machine concepts<br>&emsp;+ Workflow Orchestration<br>&emsp;+ Task State, Choice State, Pass State, Fail State<br>&emsp;+ Build an order processing workflow | 21/05/2026 | 21/05/2026 | [Workflow Orchestration with AWS Step Functions](https://000047.awsstudygroup.com) |
+| **Day 6** | - **Hands-on Workflow orchestration:**<br>&emsp;+ Create the State Machine `OrderOrchestrator`<br>&emsp;+ Connect the `CheckStock` Lambda<br>&emsp;+ Configure branching conditions using JSONata<br>&emsp;+ Execute and verify the Workflow result | 22/05/2026 | 22/05/2026 | [Workflow Orchestration with AWS Step Functions](https://000047.awsstudygroup.com) |
+
+---
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood Event-Driven Architecture and how components in the system communicate through Events.
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully built an asynchronous processing model using Amazon SNS and Amazon SQS:
+  * Created the SNS Topic:
+    * `MyTopic`
+  * Created the SQS Queues:
+    * `InventoryQueue`
+    * `AnalyticsQueue`
+  * Configured the Fan-out model:
+    * A message is published to the SNS Topic.
+    * The message is replicated and delivered simultaneously to multiple SQS Queues.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully built an event processing system with AWS Lambda:
+  * Created the Lambda Function:
+    * `ProcessOrderFunction`
+  * Configured SQS as the Event Source Trigger.
+  * Granted the permission:
+    * `AWSLambdaSQSQueueExecutionRole`
+  * Lambda automatically receives messages from the Queue, parses the JSON data,

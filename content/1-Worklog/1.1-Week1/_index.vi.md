@@ -1,59 +1,48 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-04-19
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
+
+## FCAJ WORKLOG - TUẦN 01: KHỞI ĐỘNG & NỀN TẢNG ĐÁM MÂY
+
+**Người thực hiện:** Võ Quốc Khánh  
+**Nhóm:** Group KQPSV  
 
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Thiết lập môi trường làm việc trên AWS và làm quen với các công cụ quản lý tài nguyên Cloud.
+
+- Tìm hiểu cách quản lý tài khoản AWS an toàn, kiểm soát chi phí trong quá trình thực hành.
+
+- Làm quen với AWS CLI để thao tác với các dịch vụ AWS thông qua dòng lệnh.
+
+- Tìm hiểu dịch vụ lưu trữ Amazon S3 và triển khai thử nghiệm Static Website Hosting.
+
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tham khảo (Cloud Journey) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ngày 2** | - Thiết lập môi trường AWS Bootcamp.<br>- Tổng quan về các dịch vụ AWS. | 20/04/2026 | 20/04/2026 | [Tạo tài khoản AWS đầu tiên](https://000001.awsstudygroup.com) |
+| **Ngày 3** | - Quản lý tài khoản AWS.<br>- Cấu hình AWS Budgets với giới hạn chi phí 5 USD. | 21/04/2026 | 21/04/2026 | [Quản lý chi phí với AWS Budgets](https://000007.awsstudygroup.com) |
+| **Ngày 4** | - Cài đặt và cấu hình AWS CLI v2.<br>- Kiểm tra kết nối với AWS. | 22/04/2026 | 22/04/2026 | [Thao tác dòng lệnh với AWS CLI](https://000011.awsstudygroup.com) |
+| **Ngày 5** | - Tìm hiểu các khái niệm cơ bản về Amazon S3 (Bucket, Object, Storage Class, Policy). | 23/04/2026 | 23/04/2026 | [Lưu trữ website tĩnh với Amazon S3](https://000057.awsstudygroup.com) |
+| **Ngày 6** | - Triển khai Static Website Hosting trên Amazon S3.<br>- Cấu hình quyền truy cập và kiểm tra hoạt động. | 24/04/2026 | 24/04/2026 | [Lưu trữ website tĩnh với Amazon S3](https://000057.awsstudygroup.com) |
 
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành việc khởi tạo và kích hoạt tài khoản AWS phục vụ quá trình học tập và thực hành.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Cấu hình thành công AWS Budgets với giới hạn ngân sách 5 USD/tháng nhằm theo dõi và kiểm soát chi phí sử dụng dịch vụ AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Cài đặt thành công AWS CLI v2 trên máy tính cá nhân.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Thực hiện cấu hình AWS CLI thông qua lệnh:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+```bash

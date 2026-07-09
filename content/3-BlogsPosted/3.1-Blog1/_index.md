@@ -1,31 +1,32 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-07-05
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Automating Data Refresh Between AWS Accounts for Amazon RDS Multi-AZ DB Cluster
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+Automating data refresh between AWS accounts for Amazon RDS Multi-AZ DB Cluster helps synchronize production data to staging or testing environments without manual intervention. The solution uses a serverless architecture combining multiple AWS services to automate the entire process, while ensuring security when data is shared between accounts.
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Key points to note:
 
-Key points to know:
+* Amazon RDS does not support direct sharing of cluster snapshots of Multi-AZ DB Clusters between AWS accounts, so an intermediary process is required.
+* The solution is implemented by:
+Creating a cluster snapshot from the Multi-AZ DB Cluster.
+Restoring the snapshot to a temporary Single-AZ DB Instance.
+Create a DB instance snapshot from this instance.
+Share the snapshot to the destination account and restore it to a new database.
+* The entire process is automated using a serverless architecture, requiring no management server.
+* AWS Lambda performs tasks such as snapshot creation, database restoration, snapshot sharing, and temporary resource cleanup.
+* AWS Step Functions orchestrates the entire multi-step workflow, monitoring the status of RDS tasks and only moving to the next step when the previous one is complete.
+* Amazon EventBridge transmits events between the source and destination accounts, automatically triggering subsequent steps without manual intervention.
+* Data is protected by AWS KMS with a customer-managed KMS key, ensuring snapshots remain encrypted throughout the sharing process between accounts.
+* When the snapshot is copied to the destination account, the data will be decrypted using the source account's KMS key and re-encrypted using the destination account's KMS key, meeting security requirements and separating key management rights.
+* This solution is suitable for businesses deploying multi-account models on AWS, enabling fast data synchronization, increased operational efficiency, and enhanced security.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+![Picture blog 1](/images/blog1.png)
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+[Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2200228570742103/#)
 
-...Image...
-
-...Link...
-
-...Guide...
+![Instruction](/images/instructionblog1.png)

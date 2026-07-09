@@ -1,57 +1,66 @@
 ---
-title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 6"
+date: 2026-05-29
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Research and implement a centralized monitoring system on AWS to track application operational status, collect logs, and support the debugging process.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Get familiar with monitoring and error analysis tools:
+
+  * Amazon CloudWatch.
+  * AWS X-Ray.
+
+* Build a Continuous Integration and Continuous Deployment (CI/CD) Pipeline to:
+
+  * Automatically test source code.
+  * Automatically build the application.
+  * Automatically deploy infrastructure to AWS.
+
+* Standardize team workflow by integrating CI/CD with the source control management system.
+
+
+### Tasks to Implement This Week:
+
+| Day | Task | Start Date | Completion Date | Documentation Source |
+| --- | --- | --- | --- | --- |
+| Mon | - Research Monitoring systems on AWS: <br>&emsp; + Amazon CloudWatch Logs <br>&emsp; + Log Groups and Log Streams <br>&emsp; + Monitoring Lambda and API Gateway status <br>&emsp; + Analyzing errors through Logs | 2026-05-25 | 2026-05-25 | [AWS CloudWatch Documentation](https://000008.awsstudygroup.com/) |
+| Tue | - **Practice AWS X-Ray:** <br>&emsp; + Enable Distributed Tracing <br>&emsp; + Track request flow between services <br>&emsp; + Analyze latency <br>&emsp; + Identify bottlenecks in the system | 2026-05-26 | 2026-05-26 | [AWS X-Ray Documentation](https://000140.awsstudygroup.com/) |
+| Wed | - Research CI/CD Pipeline: <br>&emsp; + Concepts of Continuous Integration and Continuous Deployment <br>&emsp; + Automated build, test, and deploy workflows <br>&emsp; + Overview of GitHub Actions / AWS CodePipeline | 2026-05-27 | 2026-05-27 | [AWS CI/CD Documentation](https://000017.awsstudygroup.com/) |
+| Thu | - **Practice Building Pipeline:** <br>&emsp; + Create CI/CD Workflow configuration file <br>&emsp; + Configure trigger on code merge into main branch <br>&emsp; + Run code checks (linting) <br>&emsp; + Perform automated build and testing | 2026-05-28 | 2026-05-28 | [GitHub Actions Documentation](https://000017.awsstudygroup.com/) |
+| Fri | - **Automated Deployment to AWS:** <br>&emsp; + Configure AWS Credentials for the Pipeline <br>&emsp; + Connect CI/CD with AWS CDK <br>&emsp; + Automatically deploy Infrastructure to AWS <br>&emsp; + Verify deployment results | 2026-05-29 | 2026-05-29 | [AWS CDK Documentation](https://000017.awsstudygroup.com/) |
 
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood the role of Monitoring systems in cloud application operations.
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully configured Amazon CloudWatch:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * Centralized log collection for AWS Lambda.
+  * Monitored API Gateway execution logs.
+  * Analyzed errors using CloudWatch Logs.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully enabled AWS X-Ray:
 
-* Used AWS CLI to perform basic operations such as:
+  * Tracked request processing flows between services.
+  * Observed Distributed Tracing service maps.
+  * Analyzed latency of each component.
+  * Assisted in identifying system bottlenecks.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Successfully built the CI/CD Pipeline workflow:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+  * Created the Pipeline configuration file.
+  * Automated triggers upon changes to the `main` branch.
+  * Executed the following steps:
+    * Source code linting.
+    * Running tests.
+    * Building the application.
+    * Deploying Infrastructure using AWS CDK.
+
+* Finalized the automated deployment process, reducing manual interventions and ensuring a consistent deployment environment across team members.

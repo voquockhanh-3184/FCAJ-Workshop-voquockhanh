@@ -1,31 +1,25 @@
 ---
 title: "Blog 2"
-date: 2024-01-01
+date: 2026-07-05
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Understanding Amazon Aurora DSQL – A New Database Solution on AWS.
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+Amazon Aurora DSQL is a serverless distributed SQL database service developed by AWS, aimed at modern applications requiring flexible scalability and high availability. The service automatically manages the entire infrastructure, supports the Active-Active architecture, and is compatible with PostgreSQL, helping businesses build high-performance systems without worrying about database operation or expansion.
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Key points to understand:
 
-Key points to know:
+* Amazon Aurora DSQL is a serverless distributed SQL database service, compatible with PostgreSQL and fully managed by AWS.
+* Users do not need to manage infrastructure, including server configuration, patching, upgrading, or database maintenance.
+* Supports automatic scaling based on access demand without sharding, simplifying system expansion.
+* Utilizes an Active-Active architecture, allowing multiple nodes to operate simultaneously, increasing fault tolerance and ensuring high availability.
+* Compatible with PostgreSQL, making it easy to use existing tools, libraries, and applications without significant code changes.
+* Combines a distributed, serverless architecture with full AWS management, reducing operating costs and allowing focus on application development rather than database administration.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+![Picture blog 2](/images/blog2.png)
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+[Link blog](https://www.facebook.com/share/p/1DDGsU5q6f/)
 
-...Image...
-
-...Link...
-
-...Guide...
+![Instruction](/images/instructionblog2.png)

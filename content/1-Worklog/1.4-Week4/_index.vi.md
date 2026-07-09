@@ -1,59 +1,65 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-05-15
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+## FCAJ WORKLOG - TUẦN 04: INFRASTRUCTURE AS CODE VỚI AWS CDK
+
+**Thực hiện bởi:** Võ Quốc Khánh  
+**Nhóm:** KQPSV Group  
+
+---
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu về **Infrastructure as Code (IaC)** và cách quản lý hạ tầng AWS thông qua mã nguồn thay vì thao tác thủ công trên AWS Console.
+* Chuyển đổi quy trình triển khai từ mô hình **Click-ops** sang mô hình tự động hóa bằng **AWS CDK**.
+* Xây dựng và quản lý hạ tầng Serverless bằng mã nguồn, giúp:
+  * Dễ dàng tái sử dụng cấu hình.
+  * Đồng bộ môi trường phát triển giữa các thành viên trong nhóm.
+  * Giảm thiểu sự sai lệch cấu hình trong quá trình triển khai.
+* Tối ưu chi phí trong quá trình học tập và thực hành:
+  * Sử dụng các tài nguyên phù hợp với AWS Free Tier.
+  * Giới hạn tài nguyên Lambda như Memory và Timeout.
+  * Tránh phát sinh các chi phí không cần thiết.
+
+---
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tham khảo (Cloud Journey) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ngày 2** | - Tìm hiểu về Infrastructure as Code (IaC):<br>&emsp;+ Khái niệm IaC<br>&emsp;+ Lợi ích của việc quản lý hạ tầng bằng mã nguồn<br>&emsp;+ So sánh giữa Click-ops và IaC<br>&emsp;+ Tổng quan về AWS CDK | 11/05/2026 | 11/05/2026 | [Cloud Development Kit (AWS CDK) Essentials](https://000038.awsstudygroup.com) |
+| **Ngày 3** | - **Thực hành: Cài đặt AWS CDK:**<br>&emsp;+ Cài đặt AWS CDK CLI thông qua npm<br>&emsp;+ Khởi tạo dự án CDK sử dụng TypeScript<br>&emsp;+ Cấu hình AWS Account và Region | 12/05/2026 | 12/05/2026 | [Cloud Development Kit (AWS CDK) Essentials](https://000038.awsstudygroup.com) |
+| **Ngày 4** | - **Thực hành: Khởi tạo môi trường CDK:**<br>&emsp;+ Chạy lệnh `cdk bootstrap`<br>&emsp;+ Tạo các tài nguyên hỗ trợ cho quá trình triển khai<br>&emsp;+ Kiểm tra trạng thái môi trường CDK | 13/05/2026 | 13/05/2026 | [Infrastructure as Code Workshop Series](https://000102.awsstudygroup.com) |
+| **Ngày 5** | - **Xây dựng hạ tầng Serverless bằng AWS CDK:**<br>&emsp;+ Định nghĩa DynamoDB Table bằng mã nguồn<br>&emsp;+ Cấu hình chế độ thanh toán `PAY_PER_REQUEST` cho DynamoDB<br>&emsp;+ Tạo Lambda Function<br>&emsp;+ Cấu hình Runtime, Memory, Timeout và Environment Variables | 14/05/2026 | 14/05/2026 | [AWS CDK Advanced](https://000076.awsstudygroup.com) |
+| **Ngày 6** | - **Triển khai và kiểm tra hạ tầng:**<br>&emsp;+ Tạo API Gateway kết nối với Lambda<br>&emsp;+ Deploy CDK Stack lên AWS<br>&emsp;+ Kiểm tra các tài nguyên được tạo trên AWS Console | 15/05/2026 | 15/05/2026 | [AWS CDK Advanced](https://000076.awsstudygroup.com) |
+
+---
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được khái niệm **Infrastructure as Code (IaC)** và vai trò của việc quản lý hạ tầng thông qua mã nguồn trong các dự án Cloud.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu được sự khác biệt giữa:
+  * Triển khai thủ công thông qua AWS Console (**Click-ops**).
+  * Triển khai tự động bằng các công cụ IaC.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hoàn thành cài đặt và cấu hình môi trường phát triển với **AWS CDK**.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Khởi tạo thành công dự án AWS CDK sử dụng **TypeScript** và thực hiện cấu hình môi trường bằng lệnh `cdk bootstrap`.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Xây dựng được hạ tầng Serverless cơ bản bằng AWS CDK bao gồm:
+  * Amazon DynamoDB Table.
+  * AWS Lambda Function.
+  * Amazon API Gateway.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Triển khai thành công CDK Stack lên AWS và kiểm tra các tài nguyên được tạo tự động trên AWS Console.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu được lợi ích của Infrastructure as Code trong việc:
+  * Quản lý phiên bản hạ tầng.
+  * Chia sẻ môi trường làm việc giữa các thành viên.
+  * Tự động hóa quá trình triển khai hệ thống.

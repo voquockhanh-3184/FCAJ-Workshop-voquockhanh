@@ -1,31 +1,34 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-07-05
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# Tự động hóa Refresh Dữ liệu giữa các Tài khoản AWS cho Amazon RDS Multi-AZ DB Cluster
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Việc tự động hóa refresh dữ liệu giữa các tài khoản AWS cho Amazon RDS Multi-AZ DB Cluster giúp đồng bộ dữ liệu production sang các môi trường staging hoặc testing mà không cần thao tác thủ công. Giải pháp sử dụng kiến trúc serverless kết hợp nhiều dịch vụ AWS để tự động hóa toàn bộ quy trình, đồng thời đảm bảo tính bảo mật khi dữ liệu được chia sẻ giữa các tài khoản.
 
 Các điểm chính cần nắm:
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+* Amazon RDS không hỗ trợ chia sẻ trực tiếp cluster snapshot của Multi-AZ DB Cluster giữa các AWS accounts, nên cần sử dụng quy trình trung gian.
+* Giải pháp thực hiện bằng cách:
+Tạo cluster snapshot từ Multi-AZ DB Cluster.
+Restore snapshot thành Single-AZ DB Instance tạm thời.
+Tạo DB instance snapshot từ instance này.
+Chia sẻ snapshot sang tài khoản đích và restore thành cơ sở dữ liệu mới.
+* Toàn bộ quy trình được tự động hóa bằng kiến trúc serverless, không cần máy chủ quản lý.
+* AWS Lambda thực hiện các tác vụ như tạo snapshot, restore database, chia sẻ snapshot và dọn dẹp tài nguyên tạm.
+* AWS Step Functions điều phối toàn bộ workflow nhiều bước, theo dõi trạng thái của các tác vụ RDS và chỉ chuyển sang bước tiếp theo khi thao tác trước đã hoàn thành.
+* Amazon EventBridge truyền sự kiện giữa tài khoản nguồn và tài khoản đích, giúp kích hoạt tự động các bước tiếp theo mà không cần can thiệp thủ công.
+* Dữ liệu được bảo vệ bằng AWS KMS với customer-managed KMS key, đảm bảo snapshot luôn được mã hóa trong suốt quá trình chia sẻ giữa các tài khoản.
+* Khi snapshot được copy sang tài khoản đích, dữ liệu sẽ được giải mã bằng KMS key của tài khoản nguồn và mã hóa lại bằng KMS key của tài khoản đích, đáp ứng yêu cầu bảo mật và phân tách quyền quản lý khóa.
+* Giải pháp phù hợp cho các doanh nghiệp triển khai mô hình multi-account trên AWS, giúp đồng bộ dữ liệu nhanh chóng, tăng hiệu quả vận hành và đảm bảo tính bảo mật.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
 
-...Hình ảnh...
+![Ảnh blog 1](/images/blog1.png)
 
-...Link...
+[Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2200228570742103/#)
 
-...Hướng dẫn...
+![Cấu trúc](/images/instructionblog1.png)

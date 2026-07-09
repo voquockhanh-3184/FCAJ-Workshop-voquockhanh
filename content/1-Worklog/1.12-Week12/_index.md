@@ -1,57 +1,31 @@
 ---
-title: "Week 12 Worklog"
-date: 2024-01-01
-weight: 2
+title: "Worklog Week 12"
+date: 2026-07-06
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deploy the frontend application onto AWS Amplify Hosting and prepare AWS Route 53 custom domain configurations.
+* Complete integration testing, finalize the project proposal, and conclude the workshop report according to the new serverless architecture.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be Implemented This Week:
 
+| Day | Task | Start Date | Completion Date | Tools / Platforms |
+| --- | --- | --- | --- | --- |
+| Mon | - **Frontend Build Verification:** <br>&emsp; + Verify the local production build using `npm run build` <br>&emsp; + Ensure the generated `dist/` directory contains `index.html` and all required static assets | 06/07/2026 | 06/07/2026 | Vite Documentation |
+| Tue | - **Amplify Hosting Deployment:** <br>&emsp; + Connect the frontend Git repository to AWS Amplify Hosting <br>&emsp; + Configure environment variables and continuous deployment (CD) build settings | 07/07/2026 | 07/07/2026 | AWS Amplify Console |
+| Wed | - **Client-Side Routing & Rewrite Configuration:** <br>&emsp; + Test React Router paths on Amplify (e.g., `/dang-nhap`, `/lop-hoc`, `/tai-khoan-cua-toi`) <br>&emsp; + Configure SPA redirection rules (rewrites) to prevent 404 errors on sub-routes | 08/07/2026 | 08/07/2026 | [AWS Amplify Redirects Guide](https://docs.aws.amazon.com/amplify/latest/userguide/redirects.html) |
+| Thu | - **Route 53 & Cross-Origin (CORS) Setup:** <br>&emsp; + Map the custom domain name using AWS Route 53 hosted zones <br>&emsp; + Update backend CORS configuration to support safe request handling across `localhost`, Amplify preview domains, and the final custom domain | 09/07/2026 | 09/07/2026 | AWS Route 53 / API Gateway |
+| Fri | - **Documentation Finalization & E2E Validation:** <br>&emsp; + Conduct end-to-end smoke testing across all major application flows <br>&emsp; + Complete and compile the project proposal, comprehensive testing suite logs, and the final workshop report | 10/07/2026 | 10/07/2026 | Markdown / Jira |
 
-### Week 12 Achievements:
+### Week 12 Key Results:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully launched and hosted the live frontend production application utilizing AWS Amplify Hosting.
+* Resolved SPA routing issues by implementing proper single-page application (SPA) rewrite rules to support clean React Router paths.
+* Configured functional CORS support covering local development, staging environments, and active cross-account production domain endpoints.
+* Conducted thorough regression and integration testing on all primary features to guarantee stability under the new AWS architecture.
+* Finalized and thoroughly documented all project deliverables, including structural architecture blueprints, technical proposals, and workshop reports.

@@ -1,57 +1,75 @@
 ---
-title: "Week 3 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 3"
+date: 2026-05-08
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+## FCAJ WORKLOG - WEEK 03: AUTHENTICATION & IDENTITY MANAGEMENT
+
+**Performed by:** Vo Quoc Khanh  
+**Group:** KQPSV Group  
+
+---
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Research and implement a user identity management (Authentication) system on AWS.
+* Integrate Amazon Cognito to provide:
+  * Account registration.
+  * User sign-in.
+  * User Identity management.
+  * JWT authentication token issuance.
+* Set up security for the Serverless API by connecting Amazon Cognito with Amazon API Gateway.
+* Complete the Frontend-Backend connection through the user authentication mechanism.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+### Tasks to be implemented during this week:
+
+| Day | Tasks | Start Date | Completion Date | Reference (Cloud Journey) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Day 2** | - Learn about Amazon Cognito:<br>&emsp;+ User Pool<br>&emsp;+ Identity Pool<br>&emsp;+ Authentication Flow<br>&emsp;+ JWT Token | 04/05/2026 | 04/05/2026 | [User Authentication with Amazon Cognito](https://000081.awsstudygroup.com/) |
+| **Day 3** | - **Hands-on:**<br>&emsp;+ Create a Cognito User Pool<br>&emsp;+ Configure sign-in with Email<br>&emsp;+ Create an App Client for a Single-page Application (SPA)<br>&emsp;+ Configure Cognito Hosted UI | 05/05/2026 | 05/05/2026 | [Single Page Application Authentication](https://000055.awsstudygroup.com) |
+| **Day 4** | - **Hands-on:**<br>&emsp;+ Create an Identity Pool<br>&emsp;+ Configure the IAM Role for authenticated users<br>&emsp;+ Set up the Authenticated Role to prepare AWS resource authorization | 06/05/2026 | 06/05/2026 | [Cross-Domain Authentication with Amazon Cognito](https://000141.awsstudygroup.com) |
+| **Day 5** | - Secure API Gateway with a Cognito Authorizer:<br>&emsp;+ Create a JWT Authorizer<br>&emsp;+ Configure the Issuer URL from the Cognito User Pool<br>&emsp;+ Verify the Audience using the App Client ID<br>&emsp;+ Apply the Authorizer to an API route | 07/05/2026 | 07/05/2026 | [Frontend Integration with API Gateway](https://000135.awsstudygroup.com/) |
+| **Day 6** | - **Frontend integration hands-on:**<br>&emsp;+ Configure the OAuth 2.0 Flow<br>&emsp;+ Test sign-up/sign-in through the Hosted UI<br>&emsp;+ Retrieve the JWT ID Token<br>&emsp;+ Prepare to send the token via the Authorization header when calling the API | 08/05/2026 | 08/05/2026 | [Serverless Storage and Auth with AWS Amplify](https://000134.awsstudygroup.com/) |
+
+---
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood the Authentication and Authorization mechanism in a Serverless system using AWS Cognito.
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully configured Amazon Cognito:
+  * Created a User Pool to manage user accounts.
+  * Configured Email-based authentication.
+  * Created an App Client for a Single-page Application (SPA).
+  * Set up the Cognito Hosted UI for sign-up and sign-in.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully created an Identity Pool:
+  * Connected it to the User Pool.
+  * Configured the IAM Role for authenticated users.
+  * Prepared the mechanism for AWS resource access authorization.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully secured API Gateway with a Cognito JWT Authorizer:
+  * Created an Authorizer on the HTTP API Gateway.
+  * Configured the Issuer URL linked to the Cognito User Pool.
+  * Verified the Audience via the App Client ID.
+  * Applied authentication to API Routes such as `POST /users`.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully integrated the authentication flow between Frontend and Backend:
+  * Signed up and signed in through the Cognito Hosted UI.
+  * Retrieved the JWT ID Token after authentication.
+  * Prepared the token to be sent in the `Authorization` Header when calling the API.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Blockers & Solutions:
+
+* **Issue:** Could not directly retrieve the JWT ID Token after signing in through the Cognito Hosted UI.
+
+* **Root Cause:**
+  * The Cognito App Client defaults to the OAuth 2.0 Authorization Code Grant.
+  * After a successful sign-in, the browser only returns an Authorization Code in the form:
