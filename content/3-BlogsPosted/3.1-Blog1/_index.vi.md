@@ -31,4 +31,4 @@ Chia sẻ snapshot sang tài khoản đích và restore thành cơ sở dữ li�
 
 [Liên kết bài viết](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2200228570742103/#)
 
-![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/blog2.png)
+![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/instructionblog1.png)

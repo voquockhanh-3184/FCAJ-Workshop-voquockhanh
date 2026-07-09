@@ -24,4 +24,4 @@ Các điểm chính cần nắm:
 
 [Liên kết bài viết](https://www.facebook.com/share/p/1DDGsU5q6f/)
 
-![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/blog2.png)
+![Hướng dẫn thực hiện](/FCAJ-Workshop-voquockhanh/images/instructionblog2.png)

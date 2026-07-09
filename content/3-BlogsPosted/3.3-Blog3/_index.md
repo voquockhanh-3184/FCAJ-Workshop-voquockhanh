@@ -26,4 +26,4 @@ The solution helps businesses proactively identify underutilized Capacity Reserv
 
 [Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2204187187012908/#)
 
-![Instruction](/FCAJ-Workshop-voquockhanh/images/blog3.png)
+![Instruction](/FCAJ-Workshop-voquockhanh/images/instructionblog3.png)

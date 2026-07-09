@@ -22,4 +22,4 @@ Key points to understand:
 
 [Link blog](https://www.facebook.com/share/p/1DDGsU5q6f/)
 
-![Instruction](/FCAJ-Workshop-voquockhanh/images/blog2.png)
+![Instruction](/FCAJ-Workshop-voquockhanh/images/instructionblog2.png)
