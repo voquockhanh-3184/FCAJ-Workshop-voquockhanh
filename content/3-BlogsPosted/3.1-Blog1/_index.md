@@ -25,8 +25,8 @@ Share the snapshot to the destination account and restore it to a new database.
 * When the snapshot is copied to the destination account, the data will be decrypted using the source account's KMS key and re-encrypted using the destination account's KMS key, meeting security requirements and separating key management rights.
 * This solution is suitable for businesses deploying multi-account models on AWS, enabling fast data synchronization, increased operational efficiency, and enhanced security.
 
-![Picture blog 1]({{< ref "/images/blog1.png" >}})
+![Picture blog 1](../../images/blog1.png)
 
 [Link blog](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2200228570742103/#)
 
-![Instruction]({{< ref "/images/instructionblog1.png" >}})
+![Instruction](../../images/instructionblog1.png)
